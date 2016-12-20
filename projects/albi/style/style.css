@@ -1,0 +1,1108 @@
+html {
+	margin: 0;
+	padding: 0;
+  font-size: 14px;
+}
+
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+  color: #7e7e7e;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 1px solid #f4f4f4;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.section-title {
+  margin-bottom: 30px;
+  color: #000;
+  text-align: center;
+}
+
+.section-title h2 {  
+  font-size: 2.5em;
+}
+
+.section-title-descr {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.banner-wrapper {
+  overflow: hidden;
+}
+
+.banner {
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+/*Animations for titles in slider and navbar*/
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fade-in-up {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes slideDown {
+  0% {
+    -moz-transform: translateY(-100%);
+  }
+
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+
+@-o-keyframes slideDown {
+  0% {
+    -o-transform: translateY(-100%);
+  }
+
+  100% {
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animated.slideDown {
+  -webkit-animation-name: slideDown;
+  -moz-animation-name: slideDown;
+  -o-animation-name: slideDown;
+  animation-name: slideDown;
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-100%);
+  }
+}
+@-moz-keyframes slideUp {
+  0% {
+    -moz-transform: translateY(0);
+  }
+
+  100% {
+    -moz-transform: translateY(-100%);
+  }
+}
+@-o-keyframes slideUp {
+  0% {
+    -o-transform: translateY(0);
+  }
+
+  100% {
+    -o-transform: translateY(-100%);
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.animated.slideUp {
+  -webkit-animation-name: slideUp;
+  -moz-animation-name: slideUp;
+  -o-animation-name: slideUp;
+  animation-name: slideUp;
+}
+
+/***************
+   MAIN PAGE
+***************/
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-default {
+    background-color: rgba(247,247,247,.9);
+    border:none;
+}
+
+.navbar-default .navbar-nav>li {
+	padding: 10px;
+}
+
+.navbar-brand {
+    padding: 18px 15px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: color 500ms ease;
+	color: #000;
+  font-weight: 600;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #00b8e0;
+}
+
+.navbar-nav>li>a {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.navbar-collapse {
+	border: none;
+}
+
+.navbar .nav .dropdown {
+  position: relative;
+  transition: all 800ms ease-in-out;
+}
+
+.submenu {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  top: 70px;
+  left: 16px;
+  width: 170px;
+  background-color: #141414;
+  transition: all 400ms ease;
+}
+
+.submenu-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar .nav .dropdown .submenu li {
+  transition: all 400ms ease;
+}
+
+.navbar .nav .dropdown .submenu li:hover {
+  background-color: #00b8e0;
+}
+
+.navbar .nav .dropdown .submenu li a {
+  display: block;
+  padding: 15px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 767px) {
+
+  .navbar-header {
+    padding-bottom: 5px;
+  }
+
+  .navbar-brand {
+    padding: 13px 15px;
+  }
+
+  .navbar-nav {
+    background: #141414;
+    margin: 0 -15px;
+    padding: 20px 50px;
+  }
+
+  .navbar-default .navbar-nav>li {
+    padding: 0 20px 15px 20px;
+  }
+
+  .navbar-default .navbar-nav>li:last-child {
+    padding-bottom: 0;
+  }
+
+  .navbar-default .navbar-nav>li>a,
+  .navbar .nav .dropdown .submenu li a {
+    color: #929191;
+  }
+
+  .navbar .nav .dropdown .submenu li a {
+    padding: 5px 10px;
+  }
+
+  .navbar .nav .dropdown .submenu li a:hover {
+    color: #00b8e0;
+  }
+
+  .navbar-nav>li>a {
+    padding: 0;
+  }
+
+  .submenu {
+    position: relative;
+    top: 5px;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navbar .nav .dropdown .submenu li:hover {
+    background: none;
+  }
+}
+
+
+
+/*Скрытие верхнего меню*/
+.headroom {
+    transition: transform 100ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+.headroom--pinned {
+    display: block;
+}
+.headroom--unpinned {
+    display: none;
+}
+
+.fixed{
+  position: fixed;
+  z-index: 99999;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+/*  СЛАЙДЕР
+______________*/
+
+.carousel {
+	margin-bottom: 20px;
+}
+
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+
+.carousel-caption {
+	bottom: 0;
+	top: 10%;
+}
+
+.carousel-inner .carousel-caption img {
+	max-width: 274px;
+}
+
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-indicators {
+    z-index: 1;
+  }
+}
+
+.carousel-control.left,
+.carousel-control.right {
+	background-image: none;
+}
+
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgba(183,183,183,.7);
+}
+
+.carousel-indicators .active {
+    width: 17px;
+    height: 17px;
+    background-color: rgba(183,183,183,.7);
+}
+
+/*  Секция компаний
+_______________________*/
+
+.products-item {
+	margin-bottom: 20px;
+}
+
+.products-item img {
+	width: 100%;
+	transition: transform 500ms ease;
+}
+
+.products-item img:hover{
+	transform: scale(1.1);
+}
+
+footer {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+/*************
+  ABOUT PAGE
+*************/
+.about-us-banner {
+  background: #ccc url(../img/about-page_header-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.about-us-banner:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.2);
+  z-index: -1;
+}
+
+.about-us-banner .banner-title {
+  position: absolute;
+  top: 50%;
+}
+
+.banner-title h2{
+  font-size: 2.1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.2em;
+  padding-top: 80px;
+}
+
+.banner-title h2:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 64px;
+  height: 51px;
+  background: url(../img/logo-pict.png) center center no-repeat;
+}
+
+@media (max-width: 767px){
+  .banner-title h2{
+    font-size: 1.4em;
+    line-height: 2.1em;
+  }
+}
+
+/*  Секция ABOUT US
+______________________*/
+.about-us,
+.features,
+.statistic,
+.advantage,
+.companies,
+.vacancy,
+.coming-soon,
+.pharma-products {
+  padding: 60px 0px;
+}
+
+.about-us-descr,
+.pharma-products-item .item-descr {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  margin-bottom: 30px;
+  text-align: left;
+  color: #000;
+}
+
+.about-us-img {
+  text-align: center;
+}
+
+.about-us-descr.col-sm-5 {
+  padding-left: 0;
+}
+
+/*  Секция FEATURES
+______________________*/
+.features {
+  text-align: center;
+  position: relative;
+  background-color: #F4F4F4;
+}
+
+.features-item {
+  margin-bottom: 30px;
+}
+
+.features-item:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 108px;
+  height: 100px;
+  background: url(../img/sprite.png);
+}
+
+.item-quality:before  {
+  background-position: -364px -10px;
+}
+
+.item-production:before  {
+  background-position: -237px -10px;
+}
+
+.item-marketing:before  {
+  background-position: -10px -10px;
+}
+
+.item-mission:before  {
+  width: 87px;
+  background-position: -130px -10px;
+}
+
+.item-target:before  {
+  background-position: -490px -10px;
+}
+
+.item-vision:before  {
+  background-position: -610px -10px;
+}
+
+.features-item-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 130px;
+  padding-bottom: 15px;
+  font-size: 1.1em;
+  color: #000;
+}
+
+.features-item-descr {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/*  Секция STATISTIC
+______________________*/
+.statistic {
+  background-color: #fff;
+}
+
+.statistic-item {
+  text-align: center;
+}
+
+.statistic-item:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  background: url(../img/sprite.png);
+}
+
+@media (max-width: 767px) {
+
+  .statistic-item {
+    margin-bottom: 60px;
+  }
+
+}
+
+.item-workers:before {
+  width: 22px;
+  background-position: -1208px -10px;
+}
+
+.item-workers.dark:before {
+  width: 22px;
+  background-position: -1250px -10px;
+}
+
+.item-companies:before {
+  background-position: -898px -10px;
+}
+
+.item-industrial:before {
+  width: 30px;
+  background-position: -950px -10px;
+}
+
+.item-products:before {
+  background-position: -1052px -10px;
+}
+
+.item-outlets:before {
+  background-position: -1000px -10px;
+}
+
+.item-teams:before {
+  background-position: -1104px -10px;
+}
+
+.item-brand:before {
+  background-position: -794px -10px;
+}
+
+.item-bottle:before {
+  width: 12px;
+  background-position: -730px -10px;
+}
+
+.statistic-item .item-number {
+  font-size: 3em;
+  line-height: 1.2em;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+.statistic-item p {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+/*  Секция STATISTIC
+______________________*/
+.advantage {
+  background-color: #F4F4F4;
+}
+
+.advantage-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.advantage .advantage-descr {
+  width: 90%;
+  height: 300px;
+}
+
+.loader,
+.loader2 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*  Секция STATISTIC
+______________________*/
+.companies-item{
+  margin-bottom: 30px;
+}
+
+.companies .companies-item img {
+  width: 100%;
+  transition: transform 500ms ease;
+}
+
+.companies .companies-item img:hover {
+  transform: scale(1.1);
+}
+
+/*  Секция STATISTIC
+______________________*/
+.vacancy {
+  background-color: #00b8e0;
+  color: #fff;  
+}
+
+.vacancy .section-title {
+  color: #fff;
+}
+
+.vacancy-descr {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.vacancy-descr p {
+  margin-bottom: 30px;
+}
+
+.vacancy-btn {
+  transition: background-color 500ms ease;
+}
+
+.vacancy-btn:hover {
+  color: #00b8e0;
+  background-color: #fff;
+}
+
+
+/*************
+  TRADE PAGE
+*************/
+.trade-banner {
+  background: url(../img/main-page_slider-slide-trade.jpg) center center no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+}
+
+/*  Секция STATISTIC
+______________________*/
+.trade-statistic {
+  background: url(../img/trade-page_numbers-section_blue-bg.jpg) center center no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.trade-statistic .section-title {
+  color: #fff;
+}
+
+/*  Секция PRODUCTS
+______________________*/
+.trade-products {
+  padding-top: 60px;
+}
+
+.trade-page .trade-products .section-title{
+  margin-bottom: 60px;
+}
+
+.trade-products-item {
+  padding-top: 40vh;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 0;
+  font-size: 1.5rem;
+  min-height: 100vh;
+}
+
+.trade-products .vodka {
+  background: url(../img/trade-page_products-section_syabry.jpg) center center no-repeat;
+  background-size: cover; 
+}
+
+.trade-products .whiskey {
+  background: url(../img/trade-page_products-section_whisky.jpeg) center center no-repeat;
+  background-size: cover;  
+}
+
+.trade-products .wine {
+  background: url(../img/trade-page_products-section_wines.jpg) center center no-repeat;
+  background-size: cover;  
+}
+
+.trade-products-item:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.3);
+  z-index: -1;
+}
+
+.trade-products-item-info {
+  position: absolute;
+  top: 0;
+}
+
+.trade-products-item-title {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.trade-products-item-descr {
+  line-height: 2rem;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.trade-products .wine {
+  padding-top: 10vh;
+}
+
+.coming-soon {
+  background-color: #00b8e0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/*************
+  PHARMA PAGE
+*************/
+.pharma-banner {
+  background: url(../img/main-page_slider-slide-pharma.jpg) center center no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+}
+
+.pharma-products-item {
+  margin-bottom: 80px;
+}
+
+.item-img-gel {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .item-img-gel {
+    text-align: center;
+  }  
+}
+
+.item-img-wipes {
+  text-align: center;
+}
+
+.item-img-wipes img{
+  width: 100%;
+}
+
+.pharma-products-item .gel {
+  padding-top: 215px;
+}
+
+.pharma-products-item .wipes {
+  padding-top: 75px;
+  padding-left: 20px;
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+
+  .pharma-products-item .gel {
+    padding-top: 0;
+  }
+
+  .item-img-wipes img {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .pharma-products-item .gel {
+    padding-top: 113px;
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  .pharma-products-item .gel {
+    padding-top: 195px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .pharma-products-item .wipes {
+    padding-top: 0;
+  }
+}
+
+/****************
+  BOTTLERS PAGE
+****************/
+.bottlers-banner {
+  background: url(../img/main-page_slider-slide-bottlers.jpg) center center no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+}
+
+.bottlers-page .bottlers-products .section-title,
+.food-page .food-products .section-title {
+  margin-bottom: 60px;
+}
+
+.bottlers-products {
+  padding-top: 60px;
+}
+
+.bottlers-products-letgo {
+  background: url(../img/bottlers-page_products-section_yellow-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.bottlers-products-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.bottlers-products-item-descr,
+.food-products-item-descr {
+  color: #000;
+}
+
+.bottlers-products-item-descr>div,
+.food-products-item-descr>div {
+  width: 100%;
+  height: 510px;
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.bottlers-products-item-img,
+.food-products-item-img {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .bottlers-products-item-descr>div,
+  .food-products-item-descr>div {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    text-align: center;
+  }  
+}
+
+.bottlers-products-fruttea {
+  background: url(../img/bottlers-page_numbers-section_blue-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.bottlers-products-fruttea .bottlers-products-item-descr,
+.food-products-noodles .food-products-item-descr {
+  text-align: right;
+  color: #fff;
+}
+
+.bottlers-products-limonade {
+  background: url(../img/bottlers-page_products-section-bg.jpg) center center no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.bottlers-products-limonade .bottlers-products-item-img {
+  text-align: left;
+}
+
+/****************
+  FOOD PAGE
+****************/
+.food-banner {
+  background: url(../img/main-page_slider-slide-food.jpg) center center no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+}
+
+.food-products {
+  padding-top: 60px;
+}
+
+.food-products-noodles {
+  background-color: #000;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.food-products-noodles .food-products-item-img img {
+  width: 100%;
+}
+
+.food-products-noodles .food-products-item-descr>div {
+  height: 300px;
+}
+
+/****************
+  CONTACT PAGE
+****************/
+.contact-page iframe {
+  width: 100%;
+  height: 550px;
+}
+
+.contact-form {
+  margin-bottom: 60px;
+}
+
+.contact-form-title {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.contact-form-descr {
+  margin-bottom: 30px;
+}
+
+.contact-form label {
+  display: block;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  height: 45px;
+  width: 48%;
+  background-color: #efefef;
+  border: 1px solid #dedede;
+  color: 555;
+  font-size: 10px;
+  margin-bottom: 30px;
+  padding: 5px 10px;
+}
+
+.contact-form textarea {
+  background-color: #efefef;
+  border: 1px solid #dedede;
+  color: 555;
+  font-size: 10px;
+  width: 98%;
+  height: 300px;
+  padding: 5px 10px;
+  margin-bottom: 30px;
+}
+
+.contact-form input[type="submit"] {
+  padding: 15px 25px;
+  color: #fff;
+  background-color: #00b8e0;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  letter-spacing: 2px;
+}
+
+.contact-info-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.contact-info-descr {
+  margin-bottom: 30px;
+}
+
+.contact-info-address,
+.contact-info-phone,
+.contact-info-email {
+  padding-left: 30px;
+  position: relative;
+}
+
+.contact-info-icon:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: url(../img/sprite-contacts.png) no-repeat;
+}
+
+.contact-info-address:before {
+  background-position: -10px -10px;
+  height: 26px;
+}
+
+.contact-info-phone:before {
+  background-position: -10px -91px;
+  top: 0;
+}
+
+.contact-info-email:before {
+  background-position: -10px -56px;
+  top: 3px;
+}

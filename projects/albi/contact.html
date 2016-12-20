@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Контакты | Albi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <link rel="stylesheet" href="style/animate.css">
+  <link rel="stylesheet" href="style/style.css">
+
+  <script src="js/jquery-1.11.3.min.js"></script>  
+  <script src="js/bootstrap.min.js"></script>  
+  <script src="js/wow.min.js"></script>
+  <script src="js/headroom.min.js"></script>
+</head>
+
+<body>
+	<header id="header" class="main-header  headroom  fixed" role="navigation">
+    <nav class="navbar  navbar-default">
+      <div class="container">
+  
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="33" width="110" alt="Albi"></a>
+        </div>
+  
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav  navbar-nav  navbar-right">
+  
+            <li><a href="about.html">О нас</a></li>
+            <li class="dropdown"><a href="#">Компании</a>
+                <ul class="submenu">
+                  <li><a href="trade.html">Trade</a></li>
+                  <li><a href="bottlers.html">Bottlers</a></li>
+                  <li><a href="pharma.html">Pharma</a></li>
+                  <li><a href="food.html">Food</a></li>
+                </ul>
+            </li>            
+            <li><a href="contact.html">Контакты</a></li>
+            
+          </ul>
+        </div>
+  
+       </div>
+       <!-- container end -->
+    </nav>
+  </header>
+
+
+  
+  <main class="contact-page" role="main">
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.0900856051267!2d76.91070872314896!3d43.20759980908953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x388368b664679e89%3A0x65fb60d7980ed669!2z0YPQuy4g0KXQvtC00LbQsNC90L7QstCwIDU1LCDQkNC70LzQsNGC0YssINCa0LDQt9Cw0YXRgdGC0LDQvQ!5e0!3m2!1sru!2skg!4v1448869912463" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
+    <div class="container">
+      <div class="row">
+        <div class="contact-form  col-sm-9">
+
+          <div class="contact-form-heading  wow fadeInLeft">
+            <h2 class="contact-form-title">Наши контакты</h2>
+            <p class="contact-form-descr">Мы любим слушать и готовы обговорить любые предложения, которые к нам поступают</p>
+          </div>
+
+          <form id="contact-form">
+
+            <div class="wow fadeInLeft"  data-wow-delay="">
+              <label for="name">Имя</label>
+              <input type="text" name="name" id="name" required>
+            </div>
+
+            <div class="wow fadeInLeft"  data-wow-delay="0.2s">
+              <label for="email">Электронная почта</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="wow fadeInLeft"  data-wow-delay="0.4s">   
+              <label for="subject">Тема</label>
+              <input type="text" name="subject" id="subject" required>
+            </div>
+
+            <div class="wow fadeInLeft"  data-wow-delay="0.6s">    
+              <label for="message">Ваш вопрос</label>
+              <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            </div>
+
+            <input class="wow fadeInDown" type="submit" value="Отправить"  data-wow-delay="0.8s">
+
+          </form>
+
+        </div>
+        <!-- contact form END -->
+
+        <div class="contact-info  col-sm-3  wow fadeInRight">
+
+          <h3 class="contact-info-title">Контакты для связи</h3>
+          <p class="contact-info-descr">
+            Если вы хотите поговорить с нами напрямую, вы можете связаться с нами с помощью следующих контактов.
+          </p>
+
+          <p class="contact-info-address  contact-info-icon">улица Ходжанова, 55, Алматы, Республика Казахстан</p>
+          <p class="contact-info-phone  contact-info-icon">001-123-456-7890</p>
+          <p class="contact-info-email  contact-info-icon">info@albi.kz</p>
+
+        </div>
+
+      </div>
+      <!-- row END -->
+
+    </div>
+    <!-- container END -->
+
+  </main>
+
+
+
+  <footer>
+    <p>© Albi Group, 2015 г. Все права защищены.</p>
+  </footer>
+  
+
+ 
+  <script>
+    new WOW().init();
+
+    $(document).ready(function() {
+
+      $("#contact-form").submit(function() {
+        $.ajax({
+          type: "POST",
+          url: "mail.php",
+          data: $(this).serialize()
+        }).done(function() {
+          $(this).find("input").val("");
+          alert("Ваше сообщение отправлено. Спасибо!");
+          $("#contact-form").trigger("reset");
+        });
+        return false;
+      });
+      
+    });
+  </script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

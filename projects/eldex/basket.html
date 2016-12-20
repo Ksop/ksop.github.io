@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Корзина | Eldex</title>
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+  <header class="page-header">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="site-logo  col-xs-12  col-sm-3">
+          <a href="index.html"><img src="img/logo--with-descr.png" height="80" width="158" alt="Eldex"></a>
+        </div>
+
+        <div class="page-header__nav-wrap  col-xs-12  col-sm-9">
+
+          <nav class="main-nav  navbar  navbar-default  clearfix">
+
+            <div class="navbar-header">
+
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+              </button>
+
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+
+              <ul class="main-nav__list  nav navbar-nav">
+                <li><a href="index.html">Eldex</a></li>
+                <li><a href="products.html">Продукция</a></li>
+                <li class="active"><a href="basket.html">Корзина</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+              </ul>
+
+            </div>
+
+          </nav>
+
+        </div>
+        <!-- nav wrap end -->
+
+      </div>
+      <!-- row end -->
+
+    </div>
+    <!-- container end -->
+
+  </header>  
+
+
+
+  <main>
+
+    <div class="basket-wrapper">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="basket">
+
+            <h2 class="basket__title">Корзина</h2>
+
+            <div class="basket__items">
+
+              <div class="basket__item">
+
+                <table>
+
+                  <thead>
+                    <tr>
+                      <th class="name-col">Товар</th>
+                      <th class="price-col">Цена</th>
+                      <th class="size-col">Количество</th>
+                      <th class="sum-col">Сумма</th>
+                      <th class="remove-col"></th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+
+                    <tr>
+
+                      <td class="name-col  clearfix">
+
+                        <div class="basket-item__preview-img">
+                          <img src="img/basket-item-set-301.png" alt="Клей плиточный “SET 301”">
+                        </div>
+
+                        <div class="basket-item__product-info">
+                          <div class="basket-item__product-name">Клей плиточный “SET 301”</div>
+                          <div class="basket-item__weight">25кг</div>                        
+                        </div>
+
+                      </td>
+
+                      <td class="price-col">
+                        <span class="col-title  visible-xs">Цена:</span>
+                        <span class="col-text">254 сом</span>
+                      </td>
+
+                      <td class="size-col  product__size">
+                        <span class="col-title  visible-xs">Количество:</span>
+                        <input type="number" min="1" value="1"> <span> шт</span>
+                      </td>
+
+                      <td class="sum-col">
+                        <span class="col-title  visible-xs">Сумма:</span>
+                        <span class="col-text">254 сом</span>
+                      </td>
+
+                      <td class="remove-col">
+                        <button>
+                          <span class="remove-col-title">Удалить</span>                          
+                          <img src="img/icon-basket-item-close.png" height="16" width="16" alt="">
+                        </button>
+                      </td>
+
+                    </tr>
+
+                  </tbody>
+
+                </table>
+
+              </div>
+              <!-- basket item END -->
+
+            </div>
+            <!-- basket items END -->
+
+            <div class="total-price">
+              Итого: 254 сом
+            </div>
+
+            <div class="product__buy-block  product__buy-block--right">
+              <a class="buy-block__btn  buy-block__btn--bg-blue" href="ordering-form.html">Оформить заказ</a>
+            </div>
+
+          </div>
+          <!-- basket END -->
+
+        </div>
+        <!-- row END -->
+
+      </div>
+      <!-- container END -->
+
+    </div>
+    <!-- basket wrapper END -->
+    
+  </main>
+  
+
+
+  <footer class="main-footer">
+
+    <div class="container">
+
+     <div class="main-footer__left-col">
+
+        <div class="main-footer__contact">
+
+          <div class="main-footer__title">Контакты</div>
+
+          <p class="main-footer__address">
+            Кыргызская Республика, <br>
+            720031 г. Бишкек, ул. Кулатова, 2 <br>
+            Тел.: +996 553 77 77 78, +996 709 51 77 88 <br>
+            e-mail: eldex.kg@gmail.com
+          </p>
+
+        </div>
+
+      </div>
+      <!-- main-footer__left-col END -->
+
+      <div class="main-footer__mid-col">
+
+        <div class="main-footer__title">Поделиться:</div>
+
+        <div class="soc-btns">
+
+          <a href="#" class="soc-btn  soc-btn-fb"></a>
+          <a href="#" class="soc-btn  soc-btn-vk"></a>
+          <a href="#" class="soc-btn  soc-btn-google"></a>
+          
+        </div>
+
+      </div>
+
+      <div class="main-footer__right-col">
+        <div class="ast-logo">
+          <a href="http://www.ast.kg"><img src="img/logo-ast.png" height="69" width="160" alt="Alatoo Smart Technologies"></a>
+        </div>
+      </div>
+
+    </div>
+    <!-- container END -->
+
+  </footer>
+  
+
+
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

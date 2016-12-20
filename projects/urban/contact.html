@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты | Urban Group</title>
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    
+</head>
+<body class="contact-page">
+
+  <header class="cd-header">
+    <div class="cd-logo"><a href="index.html"></a></div>
+
+    <a class="cd-primary-nav-trigger" href="#0">
+      <span class="cd-menu-text">Меню</span><span class="cd-menu-icon"></span>
+    </a> <!-- cd-primary-nav-trigger -->
+  </header>
+    
+
+
+  <nav class="cd-primary-nav">
+    <ul class="nav-main">
+
+      <li class="lines"></li>
+
+      <li><a href="index.html">главная</a></li>
+
+      <li><a href="architecture.html">архитектура</a></li>
+
+      <li><a href="design.html">дизайн</a></li>
+      
+      <li><a href="team.html">о нас</a></li>
+      
+      <li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
+      <li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>      
+    </ul>
+  </nav>
+
+
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div id="map" class="map  col-xs-12">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.926416289058!2d74.58386940783764!3d42.874397239726434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec8225762e4b7%3A0xab1396e36b634c34!2zMzEg0YPQuy4g0KLRg9GA0YPRgdCx0LXQutC-0LLQsCwg0JHQuNGI0LrQtdC6LCDQmtC40YDQs9C40LfQuNGP!5e0!3m2!1sru!2s!4v1451831783002" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <main id="more" class="main-content">
+
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <!-- contact-info BEGIN -->
+        <div class="contact-info  col-xs-12">
+
+          <p class="contact-info-phone">
+            +996 312 317-422 <br>
+            +996 555 233-211
+          </p>
+
+          <p class="contact-info-email">urbangroup.kg@gmail.com</p>
+
+          <p class="contact-info-address">ул.Турусбекова 31/каб.414</p>
+
+          <div class="social-btns  col-xs-12">
+            <ul>
+              <li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
+              <li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- contact-info END -->
+
+      </div>
+      <!-- row END -->
+
+    </div>
+    <!-- container END -->         
+
+  </main>
+  
+
+
+  <!-- Section 3(Footer) -->    
+  <footer class="footer clearfix">
+
+    <div class="footer-logo  col-xs-12">
+      <a href="index.html"><img src="img/logo_big_dark.png" height="80" alt="Urban Group"></a>
+    </div>
+
+    <div class="copyright  col-xs-6  col-xs-offset-3">
+
+      <p>Copyright 2015</p>
+      
+    </div>
+    
+  </footer>
+
+
+
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/main.js"></script> <!-- Resource jQuery -->
+
+  <!-- Script for smooth scrolling -->
+  <script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  </script>
+
+</body>
+</html>

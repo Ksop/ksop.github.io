@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">	
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/fonts.css">
+	<title>Barbershop-price</title>
+</head>
+<body class="inner-page">
+<!-- ########## HEADER ########## -->
+	<header class="main-header">
+		<div class="container clearfix">
+			<nav class="main-navi">
+				<ul>
+					<li><a href="index.html">Главная</a></li><!--
+					--><li><a href="#">Информация</a></li><!--
+					--><li><a href="#">Новости</a></li><!--
+					--><li><a class="active" href="price.html">Прайс-лист</a></li><!--
+					--><li><a href="shop.html">Магазин</a></li><!--
+					--><li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="user-block">
+				<a class="login" href="#">Войти</a>
+			</div>
+		</div>
+	</header>
+<!-- ########## HEADER END ########## -->
+
+<!-- ########## CONTAINER ########## -->
+	<div class="container">
+		<div class="inner-page-title">
+			<h1>BARBERSHOP BORODINSKI — ПРАЙС-ЛИСТ</h1>
+			<nav class="breadcrumbs">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li class="current">Прайс-лист</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="inner-content">
+			<div class="big-heading">
+				<h2>Истинно мужская классика</h2>
+			</div>
+			<div class="inner-content-columns clearfix">
+				<div class="inner-content-column-left">
+					<h2>Мы используем только лучшие средства:</h2>
+					<ul class="custom-list-1">
+						<li>Baxter of California</li>
+						<li>Mr Natty</li>
+						<li>Suavecito</li>
+						<li>Malin+Goetz</li>
+					</ul>
+				</div>
+				<div class="inner-content-column-right">
+					<h2>Цены на услуги наших мастеров</h2>
+					<table class="prices-table">
+						<tr>
+							<td>Стрижка</td>
+							<td>1500р</td>
+						</tr>
+						<tr>
+							<td>Стрижка бороды</td>
+							<td>500р</td>
+						</tr>
+						<tr>
+							<td>Накрутка усов</td>
+							<td>350р</td>
+						</tr>
+					</table>
+				</div>
+				<!-- inner-content-column-right -->
+
+			</div>
+		<!-- inner-content-column -->
+
+			<div class="inner-content-columns clearfix">
+				<h2>Несколько слов о нас:</h2>
+				<div class="inner-content-column-left">
+					<p class="short-text">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+				</div>
+				<div class="inner-content-column-right">
+					<p class="short-text">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+				</div>
+			</div>
+		</div>
+		<!-- inner-content -->
+
+	</div>
+<!-- ########## CONTAINER END ########## -->
+
+<!-- ########## FOOTER ########## -->
+	<footer class="main-footer">
+		<div class="container clearfix">
+			<section class="footer-contacts">
+				Barbershop "Borodinski" <br>
+				Адрес: г.Москва, ул.Советская, д.13 <br>
+				Телефон: +7(495)666-777-999
+			</section>
+			<section class="footer-social">
+				<p>Давайте дружить</p>
+				<a class="social-btn social-btn-vk" href="#">vk</a>
+				<a class="social-btn social-btn-fb" href="#">fb</a>
+				<a class="social-btn social-btn-inst" href="#">inst</a>
+			</section>
+			<section class="footer-copyright">
+				<p>Дизайн сайта:</p>
+				<a class="btn" href="#">Test</a>
+			</section>
+		</div>
+	</footer>
+<!-- ########## FOOTER END ########## -->
+	<div class="modal-content">
+
+		<div class="modal-content-close"></div>
+		<h2>Личный кабинет</h2>
+		<p>Введите пожалуйста свой логин и пароль</p>
+
+		<form class="login-form" action="/echo" method="post">
+
+			<label for="login">
+				<input id="login" type="text" name="login" placeholder="Логин">
+			</label>
+
+			<label for="password">
+				<input id="password" type="password" name="password" placeholder="Пароль">
+			</label>
+
+			<input type="checkbox" name="remember" id="remember-me">
+			<label for="remember-me">запомните меня</label>
+			<a class="restore" href="#">я забыл пароль</a>
+			<button class="btn" type="submit">Войти</button>
+
+		</form>
+
+	</div>
+	<script src="js/login-form.js"></script>
+</body>
+</html>

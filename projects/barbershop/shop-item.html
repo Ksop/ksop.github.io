@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">	
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/fonts.css">
+	<title>Barbershop item</title>
+</head>
+<body class="inner-page">
+<!-- ########## HEADER ########## -->
+	<header class="main-header">
+		<div class="container clearfix">
+			<nav class="main-navi">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="price.html">Прайс-лист</a></li>
+					<li><a class="active" href="shop.html">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="user-block">
+				<a class="login" href="#">Войти</a>
+			</div>
+		</div>
+	</header>
+<!-- ########## HEADER END ########## -->
+
+<!-- ########## CONTAINER ########## -->
+	<div class="container">
+		<nav class="breadcrumbs">
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="shop.html">Магазин</a></li>
+				<li><a href="#">Средства ухода</a></li>
+				<li class="current">Baxter of California</li>
+			</ul>
+		</nav>
+		<div class="product-page clearfix">
+			<div class="product-page-col-left">
+
+				<div class="large-photo">
+					<a href="#">
+						<img src="img/shop-item-main-photo.jpg" height="498" width="460" alt="Main photo">
+					</a>
+				</div>
+
+				<div class="small-photos">
+
+					<div class="small-photo">
+						<img src="img/shop-item-other-photo.jpg" height="149" width="140" alt="other photo">
+					</div>
+					
+					<div class="small-photo">
+						<img src="img/shop-item-other-photo2.jpg" height="149" width="140" alt="other photo">
+					</div>
+
+					<div class="small-photo">
+						<img src="img/shop-item-other-photo3.jpg" height="149" width="140" alt="other photo">
+					</div>
+				
+				</div>
+
+			</div><!-- product-page-col-left -->
+
+			<div class="product-page-col-right">
+
+				<div class="product-page-descr">
+					<h1 class="product-page-title">Набор для путешествий</h1>
+					<h2>
+						<a href="#">Baxter of California</a>
+					</h2>
+
+					<div class="actions">
+						<span class="price">2900руб.</span>
+						<button>купить</button>
+					</div>
+
+					<div class="service-data clearfix">
+						<span class="availability">В наличии</span>
+						<span class="article">Артикул: Dexter-ae</span>
+					</div>
+
+					<p class="descr-txt">
+						Travel kit - необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
+					</p>
+
+					<div class="shop-item-kit">
+						<h2>В набор входят:</h2>
+						<div class="kit-descr">
+							<ul>
+								<li>средство для умывания (50 мл)</li>
+								<li>увлажняющий крем (50 мл)</li>
+								<li>крем для бритья (50 мл)</li>
+								<li>крем после бритья, шампунь (50 мл)</li>
+								<li>удобная кожаная косметичка</li>
+							</ul>
+						</div>
+					</div>
+
+				</div><!-- product page descr END -->
+
+			</div><!-- product-page-right END -->
+
+		</div><!-- product-page -->
+
+	</div>
+<!-- ########## CONTAINER END ########## -->
+
+<!-- ########## FOOTER ########## -->
+	<footer class="main-footer">
+		<div class="container clearfix">
+			<section class="footer-contacts">
+				Barbershop "Borodinski" <br>
+				Адрес: г.Москва, ул.Советская, д.13 <br>
+				Телефон: +7(495)666-777-999
+			</section>
+			<section class="footer-social">
+				<p>Давайте дружить</p>
+				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+				<a class="social-btn social-btn-inst" href="#">Инстаграмм</a>
+			</section>
+			<section class="footer-copyright">
+				<a class="btn" href="#">Test</a>
+			</section>
+		</div>
+	</footer>
+<!-- ########## FOOTER END ########## -->
+	<div class="modal-content">
+
+		<div class="modal-content-close"></div>
+		<h2>Личный кабинет</h2>
+		<p>Введите пожалуйста свой логин и пароль</p>
+
+		<form class="login-form" action="/echo" method="post">
+
+			<label for="login">
+				<input id="login" type="text" name="login" placeholder="Логин">
+			</label>
+
+			<label for="password">
+				<input id="password" type="password" name="password" placeholder="Пароль">
+			</label>
+
+			<input type="checkbox" name="remember" id="remember-me">
+			<label for="remember-me">запомните меня</label>
+			<a class="restore" href="#">я забыл пароль</a>
+			<button class="btn" type="submit">Войти</button>
+
+		</form>
+
+	</div>
+	<script src="js/login-form.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Urban Group</title>
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    
+</head>
+<body>
+
+  <header class="cd-header">
+    <div class="cd-logo"><a href="index.html"></a></div>
+
+    <a class="cd-primary-nav-trigger" href="#0">
+      <span class="cd-menu-text">Меню</span><span class="cd-menu-icon"></span>
+    </a> <!-- cd-primary-nav-trigger -->
+  </header>
+    
+  <nav class="cd-primary-nav">
+    <ul class="nav-main">       
+      <li class="lines"></li>
+      <li><a href="architecture.html">архитектура</a></li>
+
+      <li><a href="design.html">дизайн</a></li>
+      
+      <li><a href="team.html">о нас</a></li>            
+
+      <li><a href="contact.html">контакты</a></li>
+      
+      <li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
+      <li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>      
+    </ul>
+  </nav>  
+
+  <div id="large-header" class="large-header">
+    <h1 class="main-title">архитектура / дизайн / строительство</h1>
+  </div>
+
+
+
+  <main id="more" class="cd-main-content">
+        
+    <div class="my-container clearfix">
+
+      <!-- Section 1 (architecture & design) -->
+      <div class="project-block">
+      
+        <div class="block-img left-block"></div>
+        
+        <div class="block-heading">         
+          <a href="architecture.html" class="heading-btn">
+            <h3>Архитектура</h3>
+          </a>
+        </div>
+        
+      </div>
+
+      <div class="project-block">
+
+        <div class="block-img right-block"></div>
+
+        <div class="block-heading">
+          <a href="design.html" class="heading-btn">
+            <h3>Дизайн</h3>           
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Section 2 (about us) -->
+    <div class="my-container">
+    
+      <div class="about-us">
+      
+        <div class="about-us-img"></div>
+        
+        <div class="block-heading">
+        
+          <a href="team.html" class="heading-btn">
+            <h3>Кто мы</h3>
+          </a>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+
+  </main>
+
+
+
+  <!-- footer begin -->    
+  <footer class="footer clearfix">
+
+    <div class="footer-logo  col-xs-12">
+      <a href="index.html"><img src="img/logo_big_dark.png" height="80" width="160" alt="Urban Group"></a>
+    </div>
+
+    <div class="copyright  col-xs-6  col-xs-offset-3">
+
+      <p>Copyright 2015</p>
+      
+    </div>      
+
+  </footer>
+  <!-- footer end -->
+
+
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+<!-- Script for smooth scrolling -->
+<script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

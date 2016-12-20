@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Albi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <link rel="stylesheet" href="style/animate.css">
+  <link rel="stylesheet" href="style/style.css">
+
+  
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/headroom.min.js"></script>
+</head>
+
+<body>
+	<header id="header" class="main-header  headroom  fixed" role="navigation">
+    <nav class="navbar  navbar-default">
+      <div class="container">
+  
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="33" width="110" alt="Albi"></a>
+        </div>
+  
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav  navbar-nav  navbar-right">
+  
+            <li><a href="about.html">О нас</a></li>
+            <li class="dropdown"><a href="#">Компании</a>
+                <ul class="submenu">
+                  <li><a href="trade.html">Trade</a></li>
+                  <li><a href="bottlers.html">Bottlers</a></li>
+                  <li><a href="pharma.html">Pharma</a></li>
+                  <li><a href="food.html">Food</a></li>
+                </ul>
+            </li>            
+            <li><a href="contact.html">Контакты</a></li>
+            
+          </ul>
+        </div>
+  
+       </div>
+       <!-- container end -->
+    </nav>
+  </header>
+
+
+  
+  <main role="main">
+    <div id="myCarousel" class="carousel  slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+
+        <div class="item active">
+          <img src="img/main-page_slider-slide-bottlers.jpg" alt="Albi Bottlers">
+          <div class="carousel-caption">
+            <a href="bottlers.html"><img class="animated  fade-in-up" src="img/main-page_slider-slide-bottlers-title.png" alt="Albi Bottlers"></a>
+          </div>
+        </div>
+  
+        <div class="item">
+          <img src="img/main-page_slider-slide-pharma.jpg" alt="Albi Pharma">
+          <div class="carousel-caption">
+            <a href="pharma.html"><img class="animated  fade-in-up" src="img/main-page_slider-slide-pharma-title.png" alt="Albi Pharma"></a>
+          </div>       
+        </div>
+  
+        <div class="item">
+          <img src="img/main-page_slider-slide-trade.jpg" alt="Albi Trade">
+          <div class="carousel-caption">
+            <a href="trade.html"><img class="animated  fade-in-up" src="img/main-page_slider-slide-trade-title.png" alt="Albi Trade"></a>
+          </div>         
+        </div>
+
+        <div class="item">
+          <img src="img/main-page_slider-slide-food.jpg" alt="Albi Food">
+          <div class="carousel-caption">
+            <a href="food.html"><img class="animated  fade-in-up" src="img/main-page_slider-slide-food-title.png" alt="Albi Food"></a>
+          </div>          
+        </div>
+
+      </div>
+
+    </div>
+    <!-- carousel end -->
+
+
+    <section class="products">
+	    <div class="container">
+
+	  	  <div class="products-items  row">
+	  			
+  			  <div class="products-item  col-sm-6  col-md-3  wow fadeInRight" data-wow-delay="0.2s">
+  			  	<a href="trade.html"><img src="img/main-page_trade.jpg" alt="Albi Trade"></a>
+  			  </div>
+  			  <div class="products-item  col-sm-6  col-md-3  wow fadeInRight" data-wow-delay="0.4s">
+  			  	<a href="pharma.html"><img src="img/main-page_pharma.jpg" alt="Albi Pharma"></a>
+  			  </div>
+  			  <div class="products-item  col-sm-6  col-md-3  wow fadeInRight" data-wow-delay="0.6s">
+  			  	<a href="bottlers.html"><img src="img/main-page_bottlers.jpg" alt="Albi Bottlers"></a>
+  			  </div>
+  			  <div class="products-item  col-sm-6  col-md-3  wow fadeInRight" data-wow-delay="0.8s">
+  			  	<a href="food.html"><img src="img/main-page_food.jpg" alt="Albi Food"></a>
+  			  </div>	  			
+
+	  	  </div>
+	  	  <!-- products-items end -->
+
+	    </div>
+	    <!-- container end -->
+    </section>
+
+  </main>
+
+
+
+  <footer>
+    <p>© Albi Group, 2015 г. Все права защищены.</p>
+  </footer>
+
+
+  <script>
+    new WOW().init();
+  </script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
