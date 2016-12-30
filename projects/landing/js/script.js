@@ -1,6 +1,6 @@
 $( document ).ready(function() {
   var owl = $('.testimonials');
-  
+
   owl.owlCarousel({
     items: 1,
     loop: true,
