@@ -50,8 +50,6 @@
         target = target.parentNode;
       }
 
-      if (target.className === 'booking__search') { return; }
-
       operation = target.dataset.operation;
       input = target.parentNode.querySelector('input');
 

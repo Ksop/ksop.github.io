@@ -1,0 +1,30 @@
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 1.2em 2em;
+  color: @main-color;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0.08em solid @secondary-color;
+  transition: all 200ms ease-in-out;
+
+  &--bg-blue { background: @secondary-color; }
+
+  &:hover {
+    color: @secondary-color;
+    background-color: @main-color;
+    border-color: @main-color;
+  }
+}
+
+@media @tablet-width {
+  .btn {
+    font-size: 1.3em;
+  }
+}

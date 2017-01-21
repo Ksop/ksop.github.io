@@ -14,11 +14,11 @@
 			<nav class="main-navi">
 				<ul>
 					<li><a class="active" href="index.html">Главная</a></li><!--
-					--><li><a href="#">Информация</a></li><!--
-					--><li><a href="#">Новости</a></li><!--
+					--><li><a class="disabled">Информация</a></li><!--
+					--><li><a class="disabled">Новости</a></li><!--
 					--><li><a href="price.html">Прайс-лист</a></li><!--
 					--><li><a href="shop.html">Магазин</a></li><!--
-					--><li><a href="#">Контакты</a></li>
+					--><li><a class="disabled">Контакты</a></li>
 				</ul>
 			</nav>
 			<div class="user-block">
@@ -79,7 +79,7 @@
 						<time datetime="2015-10-03">3 октября</time>
 					</li>
 				</ul>
-				<a class="btn" href="#">Все новости</a>
+				<a class="btn disabled">Все новости</a>
 			</div>
 		<!-- %%%%%% left-column end %%%%%% -->
 
@@ -91,7 +91,7 @@
 						<img src="img/galery-image.jpg" height="164" width="286" alt="Галерея">
 					</figure>
 					<button class="btn galery-nav-prev" disabled>Назад</button>
-					<button class="btn galery-nav-next">Вперед</button>
+					<button class="btn galery-nav-next  disabled">Вперед</button>
 				</div>
 			</div>
 		<!-- %%%%%% right-column end %%%%%% -->
@@ -116,8 +116,8 @@
 						Пн-Пт: с 10-00 до 22-00 <br>
 						Сб-Вс: с 10-00 до 19-00
 					</p>
-					<a class="btn open-map" href="#">Как проехать</a>
-					<a class="btn" href="#">Обратная связь</a>
+					<a class="btn  open-map">Как проехать</a>
+					<a class="btn  disabled">Обратная связь</a>
 				</div>
 			</div>
 		<!-- %%%%%% left-column end %%%%%% -->
@@ -127,12 +127,12 @@
 				<div class="appointment-form">
 					<h2 class="content-col-title">Записаться</h2>
 					<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-					<form action="/echo" method="post">
+					<form>
 						<input type="date" name="date" placeholder="Дата">
 						<input type="time" name="time" placeholder="Время">
 						<input type="text" name="name" placeholder="Ваше имя">
 						<input type="tel" name="telephone" placeholder="Телефон">
-						<button class="btn" type="submit">Отправить</button>
+						<button class="btn  disabled">Отправить</button>
 					</form>
 				</div>
 			</div>
@@ -160,7 +160,7 @@
 			</section>
 			<section class="footer-copyright">
 				<p>Дизайн сайта:</p>
-				<a class="btn" href="#">Test</a>
+				<a class="btn">Test</a>
 			</section>
 		</div>
 	</footer>

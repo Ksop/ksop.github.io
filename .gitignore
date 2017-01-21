@@ -1,3 +1,6 @@
+_design/
+node_modules/
+build/
 projects/futsal/
 projects/jewelery/
 projects/journey/

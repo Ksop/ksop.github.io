@@ -22,9 +22,11 @@ body{
 
     content: '';
 }
-/*
-    Плавное изменение цвета фона для элетментов:
-*/
+
+.disabled {
+    color: grey!important;
+}
+
 .main-navi a,
 .main-navi a:hover,
 .user-block a:hover,

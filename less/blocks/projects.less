@@ -1,0 +1,133 @@
+.projects {
+  margin-bottom: 2.778em;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.projects__title {
+  margin-top: 0;
+  margin-bottom: 2.222em;
+  font-size: 2.813em;
+  text-align: center;
+
+  &:after {
+    display: block;
+    content: '';
+    width: 1.333em;
+    height: 0.044em;
+    margin: 0 auto;
+    margin-top: 0.556em;
+    background: #fff;
+  }
+}
+
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 4rem;
+}
+
+.projects__list-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10.444em;
+  height: 10.444em;
+  margin-bottom: 2em;
+  overflow: hidden;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.projects__item-link {
+  color: @main-color;
+  text-decoration: none;
+
+  &:hover .projects__item-descr {
+    transform: translate(-50%, -50%)
+               scale(1);
+    transition: all 400ms ease-in-out;
+  }
+}
+
+.projects__item-descr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  height: 150%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(40, 47, 53, .8);
+  transform: translate(-50%, -50%)
+             scale(0);
+  
+  //горизонтальная черточка
+  &:after {
+    display: block;
+    width: 1.778em;
+    height: 0.111em;
+    background: #fff;
+    content: '';
+  }
+}
+
+.projects__descr-category {
+  display: block;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.projects__descr-name {
+  margin-top: 0;
+  margin-bottom: 0.536em;
+  font-size: 1.556em;
+  line-height: 1.5em;
+}
+
+.projects__btn {
+  font-size: 1.298em;
+}
+
+@media (max-width: 599px) {
+  .projects__list {
+    margin-bottom: 2em;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 979px) {
+
+  .projects__list {
+    font-size: 3.4rem;
+  }
+
+  .projects__list-item {
+    &:nth-child(odd) {
+      margin-right: 2em;
+    }
+  }
+}
+
+@media (min-width: 980px) {
+
+  .projects__list {
+    justify-content: space-around;
+    margin-bottom: 3em;
+    font-size: 2rem;
+  }
+
+  .projects__list-item { transform: rotate(30deg); }
+  .projects__item-link { transform: rotate(-30deg); }
+  .projects__btn { font-size: 0.7em; }
+}
