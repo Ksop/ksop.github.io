@@ -2,65 +2,62 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700|Roboto+Condensed:700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <title>Portfolio</title>
+  <title>Портфолио верстальщика Сопиева Кубанычбека</title>
 </head>
 <body>
-  <!-- <a href="projects/sedona/index.html">Sedona (adaptive, flexbox)</a><br>
-  <a href="projects/landing/index.html">Landing (adaptive, flexbox)</a><br>
-  <a href="projects/headliner/index.html">Headliner (adaptive)</a><br>
-  <a href="projects/barbershop/index.html">Barbershop (non-adaptive)</a><br>
-  <a href="projects/albi/index.html">Albi (adaptive)</a><br>
-  <a href="projects/urban/index.html">Urban (adaptive)</a><br>
-  <a href="projects/eldex/index.html">Eldex (adaptive)</a><br> -->
 
-    <!--~~~~~     PAGE HEADER     ~~~~~-->
-    <header class="page-header">
+  <!--~~~~~     PAGE HEADER     ~~~~~-->
+  <header class="page-header">
 
-      <div class="page-header__inner">
+    <div class="page-header__inner">
 
-        <div class="container">
-
-          <div class="row">
-            <div class="page-header__contacts">
-              <div><a href="tel:+996701099153" class="page-header__contacts__item">0701 099 153</a></div>
-              <div><a href="#" class="page-header__contacts__item">Скачать резюме</a></div>
-            </div>
-            
-            <div class="page-header__logo">
-              <a href="/"><img src="img/logo.png" alt="Logo"></a>
-            </div>
-            
-            <div class="page-header__soc-btns">
-              <ul class="soc-btns">
-                <li><a href="#" class="soc-btns__item"></a></li>
-                <li><a href="#" class="soc-btns__item"></a></li>
-                <li><a href="#" class="soc-btns__item"></a></li>
-              </ul>
-            </div>
-          </div>
-          <!-- /row -->
-
+      <div class="container">
+        
+        <div class="page-header__logo">
+          <a href="/"><img src="img/logo.png" alt="Logo"></a>
         </div>
-        <!-- /container -->
+        
+        <!-- <div class="page-header__soc-btns">
+          <ul class="soc-btns">
+            <li><a href="#" class="soc-btns__item"></a></li>
+            <li><a href="#" class="soc-btns__item"></a></li>
+            <li><a href="#" class="soc-btns__item"></a></li>
+          </ul>
+        </div> -->
 
       </div>
-      <!-- /page-header__inner -->
+      <!-- /container -->
 
-    </header>
-    <!--~~~~~     / PAGE HEADER     ~~~~~-->
+    </div>
+    <!-- /page-header__inner -->
+
+  </header>
+  <!--~~~~~     / PAGE HEADER     ~~~~~-->
 
 
 
   <!--~~~~~     INTRO     ~~~~~-->
   <div class="intro">
 
-    <div class="layout-center-wrapper  intro__inner">
+    <div class="container  intro__inner">
 
       <h1 class="intro__title">Кубанычбек Сопиев</h1>
       <p class="intro__descr">верстальщик</p>
-      <a href="#projects" class="intro__scroll-down">scroll down</a>
+
+      <a href="tel:+996701099153" class="intro__phone">0701 099 153</a>
+      <a href="files/resume.rtf" class="intro__resume">Скачать резюме</a>
+
+      <a href="#projects" class="intro__scroll-down">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 245.059 245.059" width="42px" height="42px">
+          <g>
+            <path d="M217.774,121.224l-95.252,84.224l-95.22-84.224c-6.229-6.229-16.368-6.229-22.597,0     s-6.229,16.368,0,22.566l106.312,94.044c3.178,3.21,7.342,4.704,11.505,4.64c4.164,0.095,8.327-1.398,11.505-4.545     l106.344-94.044c6.198-6.229,6.198-16.4,0-22.597C234.11,115.027,223.971,114.995,217.774,121.224z" fill="#FFFFFF"/>
+            <path d="M110.984,123.894c3.178,3.178,7.342,4.704,11.505,4.64c4.164,0.064,8.359-1.462,11.505-4.64     L240.307,29.85c6.325-6.229,6.325-16.336,0.064-22.597c-6.229-6.229-16.4-6.229-22.597,0l-95.252,84.224L27.301,7.252     c-6.261-6.229-16.4-6.229-22.629,0s-6.229,16.368,0,22.597L110.984,123.894z" fill="#FFFFFF"/>
+          </g>
+        </svg>
+      </a>
 
     </div>
     <!-- center wrapper end -->
@@ -73,48 +70,96 @@
   <!--~~~~~      PROJECTS     ~~~~~-->
   <section id="projects" class="projects">
 
-    <h2 class="projects__title">Последние работы</h2>
-
     <ul class="projects__list">
-      <li class="projects__list-item">
-        <a class="projects__item-link">
-          <img src="" width="640" height="480" alt="Glass of cola">
+      <li>
+        <figure class="projects__list-item" data-project="1">
+          <a href="/projects/landing/index.html" class="projects__item-link">
+            <img src="img/landing-500x561.jpg" alt="Landing Page">
+            
+            <figcaption class="projects__item-descr">
+              <h4 class="projects__item-title">Landing</h4>
+              <p>Adaptive, flexbox, jQuery</p>
+            </figcaption>
+          </a>
+        </figure>
+      </li>
 
-          <div class="projects__item-descr">
-            <span class="projects__descr-category">PR</span>
-            <h3 class="projects__descr-name">Coca-Cola</h3>
-          </div>
-        </a>
+      <li>
+        <figure class="projects__list-item" data-project="2">
+          <a href="projects/headliner/index.html" class="projects__item-link">
+            <img src="img/landing-500x561.jpg" alt="Headliner">
+            
+            <figcaption class="projects__item-descr">
+              <h4 class="projects__item-title">Headliner</h4>
+              <p>Adaptive, flexbox, jQuery</p>
+            </figcaption>
+          </a>
+        </figure>
+      </li>
+
+      <li>
+        <figure class="projects__list-item" data-project="3">
+          <a href="projects/urban/index.html" class="projects__item-link">
+            <img src="img/landing-500x561.jpg" alt="Urban">
+            
+            <figcaption class="projects__item-descr">
+              <h4 class="projects__item-title">Urban</h4>
+              <p>Adaptive, bootstrap, jQuery</p>
+            </figcaption>
+          </a>
+        </figure>
+      </li>
+
+      <li>
+        <figure class="projects__list-item" data-project="4">
+          <a href="projects/sedona/index.html" class="projects__item-link">
+            <img src="img/landing-500x561.jpg" alt="Sedona">
+            
+            <figcaption class="projects__item-descr">
+              <h4 class="projects__item-title">Sedona</h4>
+              <p>Adaptive, flexbox, JS</p>
+            </figcaption>
+          </a>
+        </figure>
+      </li>
+
+      <li>
+        <figure class="projects__list-item" data-project="5">
+          <a href="projects/albi/index.html" class="projects__item-link">
+            <img src="img/landing-500x561.jpg" alt="Albi">
+            
+            <figcaption class="projects__item-descr">
+              <h4 class="projects__item-title">Albi</h4>
+              <p>Adaptive, bootstrap, jQuery</p>
+            </figcaption>
+          </a>
+        </figure>
+      </li>
+
+      <li>
+        <figure class="projects__list-item" data-project="6">
+          <a href="projects/eldex/index.html" class="projects__item-link">
+            <img src="img/landing-500x561.jpg" alt="Eldex">
+            
+            <figcaption class="projects__item-descr">
+              <h4 class="projects__item-title">Eldex</h4>
+              <p>Adaptive, bootstrap, jQuery</p>
+            </figcaption>
+          </a>
+        </figure>
       </li>
     
-      <li class="projects__list-item">
-        <a class="projects__item-link">
-          <img src="" width="504" height="423" alt="Imac">
-          
-          <div class="projects__item-descr">
-            <span class="projects__descr-category">SMM</span>
-            <h3 class="projects__descr-name">Apple</h3>
-          </div>
-        </a>
-      </li>
-    
-      <li class="projects__list-item">
-        <a class="projects__item-link">
-          <img src="" width="750" height="370" alt="Nokia phones">
+     
 
-          <div class="projects__item-descr">
-            <span class="projects__descr-category">Media strategy</span>
-            <h3 class="projects__descr-name">Nokia</h3>
-          </div>
-        </a>
-      </li>
     </ul>
 
-    <div class="projects__btn">
+    <!-- <div class="projects__btn">
       <a class="btn  btn--bg-blue">Все работы</a>
-    </div>
+    </div> -->
 
   </section>
   <!--~~~~~    / PROJECTS     ~~~~~-->
+
+  <script src="js/main.min.js"></script>
 </body>
 </html>

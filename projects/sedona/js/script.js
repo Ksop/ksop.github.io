@@ -53,7 +53,7 @@
       operation = target.dataset.operation;
       input = target.parentNode.querySelector('input');
 
-      if(isNaN(input.value) || input.value < 0){
+      if(isNaN(input.value) || input.value < 0) {
         input.value = 0;
       }
 

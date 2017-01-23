@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Календарь игр | Futsal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  
+  <header class="main-header">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="logo  col-sm-12  col-md-2">
+          <a href="index.html">Logo</a>
+        </div>
+
+        <nav class="main-nav  col-sm-12  col-md-9  clearfix">
+
+          <ul class="clearfix">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Команды</a></li>
+            <li><a href="tables-tours.html">Туры / таблицы</a></li>     
+            <li><a href="documents.html">Документы</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+          </ul>
+          
+          <a href="#" class="pull">меню</a>
+
+        </nav>
+        
+        <!-- user block wrapper begin -->
+        <div class="user-block-wrapper  col-sm-12 col-md-1">
+
+          <div class="user-block">
+            <a id="user-block-login" class="user-block-login" href="#">Войти</a>
+          </div>
+
+        </div>
+        <!-- user-block wrapper end -->
+
+      </div>
+      <!-- row end -->
+
+    </div>
+    <!-- container end -->
+
+  </header>
+
+
+
+  <main>
+
+    <div class="top-content  hidden-xs">
+      
+      <div id="myCarousel" class="carousel  slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+          <div class="item active">
+
+            <img src="img/slider-slide-1.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>Кто же станет чемпионом в этом году?</h3>
+              <p class="caption-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика.</p>
+              <div class="soc-btns-wrapper">
+                <ul class="soc-btns">
+                  <li class="share-text">Поделиться:</li>
+                  <li><a class="soc-btn--fb" href="#"></a></li>
+                  <li><a class="soc-btn--vk" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="item">
+
+            <img src="img/slider-slide-2.jpg" alt="">
+
+             <div class="carousel-caption">
+              <h3>Ipsum</h3>
+              <p>Lorem dolor sit amet, consectetur adipisicing elit. Esse temporibus, quasi voluptatem possimus tempore obcaecati.</p>
+              <div class="soc-btns-wrapper">
+                <ul class="soc-btns">
+                  <li class="share-text">Поделиться:</li>
+                  <li><a class="soc-btn--fb" href="#"></a></li>
+                  <li><a class="soc-btn--vk" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="item">
+
+            <img src="img/slider-slide-3.jpg" alt="">
+
+             <div class="carousel-caption">
+              <h3>Foore</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <div class="soc-btns-wrapper">
+                <ul class="soc-btns">
+                  <li class="share-text">Поделиться:</li>
+                  <li><a class="soc-btn--fb" href="#"></a></li>
+                  <li><a class="soc-btn--vk" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="item">
+
+            <img src="img/slider-slide-4.jpg" alt="">
+
+             <div class="carousel-caption">
+              <h3>Madre</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, vitae!</p>
+              <div class="soc-btns-wrapper">
+                <ul class="soc-btns">
+                  <li class="share-text">Поделиться:</li>
+                  <li><a class="soc-btn--fb" href="#"></a></li>
+                  <li><a class="soc-btn--vk" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- carousel inner end -->
+
+      </div>
+      <!-- carousel end -->
+
+    </div>
+    <!-- top-content end -->
+
+
+    <!-- BEGIN CONTENT-WRAPPER -->
+    <div class="content-wrapper  container">
+
+      <div class="row">
+
+        <!-- BEGIN MAIN-CONTENT -->
+        <div class="main-content  col-xs-12">
+
+          <div class="calend-choose-season">
+
+            <h2 class="season-title">Выберите сезон</h2>
+
+            <select class="select-season  form-control">
+              <option value="">2014/2015</option>
+              <option value="">2015/2016</option>
+            </select>
+
+          </div>
+
+          <div class="calend-tour">
+            <h3>1 Тур</h3>
+            <table class="calend-tour-table">
+
+              <thead>
+                <tr>
+                  <th class="tour-table-date">Дата</th>
+                  <th class="tour-table-first-team">Команда 1</th>
+                  <th class="tour-table-score">Счет</th>
+                  <th class="tour-table-second-team">Команда 2</th>
+                </tr>
+              </thead>
+              
+              <tbody>
+
+                <tr>
+                  <td class="tour-table-date">17.07.2015|19:00</td>
+                  <td class="tour-table-first-team">НСК Аламедин</td>
+                  <td class="tour-table-score">
+                    <b>2:2</b>
+                  </td>
+                  <td class="tour-table-second-team">Намыс Ынтымак</td>
+                </tr>
+
+                <tr>
+                  <td class="tour-table-date">17.07.2015|19:00</td>
+                  <td class="tour-table-first-team">НСК Аламедин</td>
+                  <td class="tour-table-score">
+                    <b>2:2</b>
+                  </td>
+                  <td class="tour-table-second-team">Намыс Ынтымак</td>
+                </tr>
+
+                <tr>
+                  <td class="tour-table-date">17.07.2015|19:00</td>
+                  <td class="tour-table-first-team">НСК Аламедин</td>
+                  <td class="tour-table-score">
+                    <b>2:2</b>
+                  </td>
+                  <td class="tour-table-second-team">Намыс Ынтымак</td>
+                </tr>
+
+                <tr>
+                  <td class="tour-table-date">17.07.2015|19:00</td>
+                  <td class="tour-table-first-team">НСК Аламедин</td>
+                  <td class="tour-table-score">
+                    <b>2:2</b>
+                  </td>
+                  <td class="tour-table-second-team">Намыс Ынтымак</td>
+                </tr>
+
+              </tbody>
+              
+            </table>
+          </div>
+
+          <div class="calend-tour">
+            <h3>2 Тур</h3>
+            <table class="calend-tour-table">
+
+              <thead>
+                <tr>
+                  <th class="tour-table-date">Дата</th>
+                  <th class="tour-table-first-team">Команда 1</th>
+                  <th class="tour-table-score">Счет</th>
+                  <th class="tour-table-second-team">Команда 2</th>
+                </tr>
+              </thead>
+              
+              <tbody>
+
+                <tr>
+                  <td class="tour-table-date">17.07.2015|19:00</td>
+                  <td class="tour-table-first-team">НСК Аламедин</td>
+                  <td class="tour-table-score">
+                    <b>2:2</b>
+                  </td>
+                  <td class="tour-table-second-team">Намыс Ынтымак</td>
+                </tr>
+
+                <tr>
+                  <td class="tour-table-date">17.07.2015|19:00</td>
+                  <td class="tour-table-first-team">НСК Аламедин</td>
+                  <td class="tour-table-score">
+                    <b>2:2</b>
+                  </td>
+                  <td class="tour-table-second-team">Намыс Ынтымак</td>
+                </tr>
+
+                <tr>
+                  <td class="tour-table-date">17.07.2015|19:00</td>
+                  <td class="tour-table-first-team">НСК Аламедин</td>
+                  <td class="tour-table-score">
+                    <b>2:2</b>
+                  </td>
+                  <td class="tour-table-second-team">Намыс Ынтымак</td>
+                </tr>
+
+                <tr>
+                  <td class="tour-table-date">17.07.2015|19:00</td>
+                  <td class="tour-table-first-team">НСК Аламедин</td>
+                  <td class="tour-table-score">
+                    <b>2:2</b>
+                  </td>
+                  <td class="tour-table-second-team">Намыс Ынтымак</td>
+                </tr>
+
+              </tbody>
+              
+            </table>
+          </div>
+
+        </div>
+        <!-- END MAIN-CONTENT -->    
+      
+      </div>
+      <!-- row end -->
+
+    </div>
+    <!-- END CONTENT-WRAPPER -->
+
+  </main>
+
+
+
+  <footer>
+    <p>© Copyright 2015 г.</p>
+    <div class="logo-ast">
+      <a href="http://www.ast.kg">
+        <img src="img/alatoo-logo.png" height="69" width="160" alt="">
+      </a>
+    </div>
+  </footer>
+
+
+
+  <!-- modal content begin -->
+  <div class="modal-content-login">
+
+    <div class="modal-content-login-close"></div>
+    <h2>Авторизация</h2>
+    <p>Введите пожалуйста свой логин и пароль</p>
+
+    <form class="login-form">
+
+      <label for="login">
+        <input id="login" type="text" name="login" placeholder="Логин">
+      </label>
+
+      <label for="password">
+        <input id="password" type="password" name="password" placeholder="Пароль">
+      </label>
+
+      <input type="checkbox" name="remember" id="remember-me">
+      <label class="remember-me" for="remember-me">запомните меня</label>
+      <a class="restore-link" href="#">я забыл пароль</a>
+      <button class="btn-submit" type="submit">Войти</button>
+
+      <span>Нет аккаунта?</span>
+      <a class="registration-link" href="#">Зарегистроваться</a>            
+
+    </form>
+
+  </div>
+  <!-- modal content end -->
+  
+  <div class="dark-wrapper-on-body"></div>
+ 
+ 
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

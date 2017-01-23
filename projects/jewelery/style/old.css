@@ -1,0 +1,787 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 300;
+	font-style: normal;
+	color: #b7b7b7;
+}
+
+.center-wrapper {
+	margin: 0 auto;
+	width: 940px;
+	padding: 0 10px;
+}
+
+.clearfix::after {
+	display: table;
+	content: '';
+	clear: both;
+}
+
+.sprite {
+	background: url(../img/icons/sprite.png) no-repeat;
+}
+
+.btn {
+	display: inline-block;
+	padding: 6px 40px;
+	border-radius: 3px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 40px;
+	color: #fff;
+	text-decoration: none;
+	border: 2px solid #fff;
+}
+
+.btn:hover {
+	background: #fff;
+	color: #e92121;
+}
+
+.btn,
+.btn:hover {
+	transition: background 0.4s ease-in-out;
+}
+
+.learn-more {
+	background: #e92121;
+	border-color: transparent;
+}
+
+.learn-more:hover {
+	background: #fff;
+	color: #e92121;
+}
+
+/*======================================
+
+	Основные стили для зигзаза(разделитяет
+	заголовок от описания)
+
+======================================*/
+.steps-header .steps-title::after,
+.slider-item .item-title::after,
+.works-items .works-title h2:after,
+.comments-header .comments-title::after,
+.photoblog-items .photoblog-title h2:after {
+	content: '';
+	display: block;
+	background: url(../img/icons/sprite.png) no-repeat;
+	background-position: -4px -636px;
+	width: 70px;
+	height: 10px;
+	margin-top: 20px;
+}
+
+/*======================================
+
+	Крупные Заголовки h2 в секциях:
+	about us, features, works, photoblog
+
+======================================*/
+.about-us .about-us-title,
+.features .features-title,
+.works .works-title h2,
+.photoblog .photoblog-title h2 {
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 60px;
+	text-transform: uppercase;
+	color: #464646;
+	margin-top: 110px;
+	margin-bottom: 115px;
+}
+
+/*======================================
+
+	"Средние" Заголовки h2 в секциях:
+	steps, slider, comments
+
+======================================*/
+.steps-header .steps-title,
+.slider-item .item-title,
+.comments-section .comments-title {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 30px;
+	line-height: 40px;
+	color: #464646;
+}
+
+/*======================================
+
+	Самые "маленькие" Заголовки в секциях:
+	steps, features, comments
+
+======================================*/
+.step-item .item-title,
+.features-item .item-title,
+.comments-item .item-title {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	color: #464646;
+}
+
+/*==========================================
+
+	Позиционирование "Средних" Заголовков h2 
+	в секциях:
+	steps, comments
+
+==========================================*/
+.steps-header,
+.comments-header {
+	text-align: center;
+}
+
+.steps-header .steps-title,
+.comments-header .comments-title {
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+
+/*
+	Основные стили "зигзага" в самом начале файла
+*/
+.steps-header .steps-title::after,
+.comments-header .comments-title::after {
+	margin: 20px auto 0 auto;
+}
+
+
+
+/*
+	########    HEADER SECTION    ########
+*/
+.page-header {
+	background: #272727 url(../pict/header-bg.jpg) 50% 50% no-repeat;
+	background-size: cover;	
+	padding-top: 35px;
+}
+
+.page-header .container {
+	margin-bottom: 240px;
+}
+
+.logo {
+	float: left;
+	width: 210px;
+}
+
+.logo a,
+.footer-logo a {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 36px;
+	text-decoration: none;
+}
+
+.logo a:hover,
+.footer-logo a:hover {
+	color: #e92121;
+}
+
+.logo a,
+.footer-logo a,
+.logo a:hover,
+.footer-logo a:hover {
+	transition: color .4s ease-in-out;
+}
+
+.top-soc-btns {
+	max-width: 120px;
+	float: right;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+.top-soc-btns a {
+	float: right;
+	margin-left: 10px;
+}
+
+.social-btn {
+	display: block;
+	width: 20px;
+	height: 20px;	
+}
+
+.social-btn-tw {
+    background-position: -5px -592px;,
+}
+
+.social-btn-fb {
+    background-position: -5px -567px;
+}
+
+.top-nav {
+	width: 500px;
+	float: right;
+}
+
+.top-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+.top-nav li {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.top-nav a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+	line-height: 36px;
+	font-weight: normal;
+}
+
+.page-title {
+	margin-bottom: 45px;
+}
+
+.page-title span {
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 36px;
+	color: #fff;
+}
+
+.page-title h1 {
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: bold;
+	margin-top: 25px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.page-title .learn-more {
+	margin-right: 25px;
+}
+
+main {
+	margin-bottom: 75px;
+}
+
+
+/*
+	########    ABOUT US SECTION    ########
+*/
+.about-us {
+	background: #fff;
+	padding-top: 90px;
+	padding-bottom: 100px;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+.col-left {
+	width: 400px;
+	margin-right: 80px;
+	float: left;
+}
+
+.col-right {
+	width: 460px;
+	float: right;
+}
+
+.about-us .about-us-title{
+	margin-top: 110px;
+	margin-bottom: 115px;
+}
+
+.about-us .about-us-txt {
+	margin-bottom: 40px;
+}
+
+.about-us .about-us-txt:last-child {
+	margin-bottom: 0;
+}
+
+
+/*
+	########    STEPS SECTION    ########
+*/
+.steps {
+	padding-top: 100px;
+	padding-bottom: 20px;
+}
+
+.steps-header {
+	margin-bottom: 125px;	
+}
+
+.steps-header .steps-descr {
+	font-size: 18px;
+	margin: 0;
+}
+
+.steps-items {
+	font-size: 0;
+}
+
+.step-item {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	width: 300px;
+	margin-right: 20px;
+	margin-bottom: 55px;
+}
+
+.step-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.step-item .item-title {
+	margin-bottom: 20px;
+	width: 265px;
+}
+
+.step-item .item-title::before {
+	content: '';
+	display: block;
+	background: url(../img/icons/sprite.png) no-repeat;
+	width: 64px;
+    height: 64px;
+    margin-bottom: 25px;
+}
+
+.step-item .item-title:first-child::before {
+	background-position: -5px -5px;
+}
+
+.step-item:nth-child(2) .item-title::before {
+	background-position: -5px -79px;
+}
+
+.step-item:nth-child(3) .item-title::before {
+	background-position: -5px -153px;
+}
+
+.step-item:nth-child(4) .item-title::before {
+	background-position: -5px -227px;
+}
+
+.step-item:nth-child(5) .item-title::before {
+	background-position: -5px -301px;
+}
+
+.step-item .item-title:last-child::before {
+	background-position: -5px -375px;
+}
+
+.step-item .item-descr {
+	line-height: 24px;
+}
+
+
+/*
+	########    SLIDER SECTION    ########
+*/
+.slider {
+	background: #faf9f9;
+	padding: 110px 0;
+	position: relative;
+}
+
+.slider-item .item-title {
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+.slider-item .item-descr {
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+.slider-nav {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+}
+
+.slider-nav-prev,
+.slider-nav-next {
+	content: '';
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+	background: #fff;
+	opacity: 0.5;
+}
+
+.slider-nav-prev {
+	left: 50px;
+}
+
+.slider-nav-next {
+	right: 50px;
+}
+
+.slider-nav-prev:hover,
+.slider-nav-next:hover {
+	opacity: 1;
+}
+
+/*
+	Стрелки для переключения слайдера
+*/
+.slider-nav-prev::before,
+.slider-nav-prev::after,
+.slider-nav-next::before,
+.slider-nav-next::after {
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 2px;
+	background: #393939;
+}
+
+.slider-nav-prev::before, 
+.slider-nav-next::before {
+	transform: rotate(-45deg);
+}
+
+.slider-nav-prev::after,
+.slider-nav-next::after {
+	transform: rotate(45deg);	
+}
+
+/*
+	Позицинионируем так, чтобы получить 
+	стрелку, а не крестик
+*/
+.slider-nav-prev::after,
+.slider-nav-next::before {
+	bottom: 29px;
+}
+
+.slider-nav-prev::before, 
+.slider-nav-next::after {
+	top:29px;
+}
+
+/*
+	Центруем стрелку внутри белого квадрата
+*/
+.slider-nav-prev::before,
+.slider-nav-prev::after {
+	left: 50%;
+	margin-left: -15px;
+}
+
+.slider-nav-next::before,
+.slider-nav-next::after {
+	right: 50%;
+	margin-right: -15px;
+}
+
+
+/*
+	########    FEATURES SECTION    ########
+*/
+.features {
+	padding-top: 95px;
+	padding-bottom: 25px;
+}
+
+.features .features-title {
+	padding-right: 106px;
+}
+.features .col-left {
+	margin-right: 0;
+}
+
+.features-items {
+	float: left;
+	width: 540px;
+}
+
+.features-item {
+	float: left;
+	width: 220px;
+	margin-right: 100px;
+	margin-bottom: 55px;
+}
+
+.features-item:nth-child(2n) {
+	margin-right: 0;
+}
+
+.features-item .item-title {
+	margin-bottom: 20px;
+}
+
+.features-item .item-descr {
+	line-height: 24px;
+}
+
+
+/*
+	########    WORKS SECTION    ########
+*/
+.works {
+	padding-bottom: 55px;
+}
+
+.works-items {
+	margin-bottom: 30px;
+}
+
+.works-items ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.works-items li {
+	float: left;
+	width: 235px;
+	height: 235px;
+}
+
+.works-title {
+	margin-left: 45px;
+}
+
+.works-items .works-title h2 {
+	margin-top: 70px;
+	margin-bottom: 0;
+}
+
+.works-items .works-title h2:after {
+	margin-top: 35px;
+}
+
+.works .works-descr p,
+.photoblog .photoblog-descr p {
+	float: left;
+	width: 425px;
+	margin-right: 90px;
+}
+
+.works .works-descr p:nth-child(2n),
+.photoblog .photoblog-descr p:nth-child(2n) {
+	margin-right: 0;
+}
+
+
+/*
+	########    COMMENTS SECTION    ########
+*/
+.comments-section {
+	background: #faf9f9;
+	padding-top: 70px;
+}
+
+.comments-header {
+	margin-bottom: 90px;
+}
+
+.comments-descr {
+	font-size: 18px;
+	margin: 0;
+}
+
+.comments-items {
+	font-size: 0;
+}
+
+.comments-item {
+	display: inline-block;
+	font-size: 16px;
+	width: 240px;
+	margin-right: 20px;
+	margin-bottom: 80px;
+	vertical-align: top;
+	padding-left: 60px;
+	position: relative;
+	padding-top: 6px;
+}
+
+.comments-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.comments-item .item-title {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	font-style: normal;
+	margin-bottom: 5px;
+}
+
+.comments-item .item-title::before {
+	content: '';
+	background: #e92121;
+	width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.comments-item .item-title::after {
+	content: '';
+	background:	url(../img/icons/sprite.png);
+	background-position: -5px -615px;
+	width: 15px;
+    height: 11px;
+    position: absolute;
+    left: 13px;
+    top: 13px;
+}
+
+.comments-item .item-descr {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+	font-style: normal;
+	margin-bottom: 10px;
+}
+
+
+/*
+	########    PHOTOBLOG SECTION    ########
+*/
+.photoblog-items {
+	margin-bottom: 30px;
+}
+
+.photoblog-items ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+.photoblog-items li {
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: top;
+	width: 235px;
+	height: 235px;
+}
+
+.photoblog-items .photoblog-title {
+	margin-right: 235px;
+}
+
+.photoblog-items .photoblog-title h2 {
+	margin-top: 70px;
+	margin-bottom: 0;
+}
+
+.photoblog-items .photoblog-title h2:after {
+    margin-top: 35px;
+}
+
+
+/*
+	########    FOOTER SECTION    ########
+*/
+
+.page-footer {
+	background: #141414;
+	padding: 65px 0;
+}
+
+.footer-logo {
+	margin-bottom: 60px;
+}
+
+.information ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.information-col-left {
+	float: left;
+	width: 180;
+	margin-right: 40px;
+}
+
+.information-col-right {
+	float: right;
+	width: 180;
+}
+
+.information li a {
+	display: block;
+	text-decoration: none;
+	color: #474747;
+	line-height: 36px;
+}
+
+.information li a:hover {
+	text-decoration: underline;
+	color: #b7b7b7;
+}
+
+footer .col-right {
+	width: 220px;
+}
+
+.footer-soc-btns {
+	padding-top: 5px;
+	width: 220px;
+	margin-bottom: 75px;
+}
+
+.footer-soc-btn {
+	display: inline-block;
+	height: 22px;
+	margin-left: 20px;
+	float: right;
+}
+
+.footer-soc-btn:last-child {
+	margin-left: 0;
+}
+
+footer .soc-btn-tw {
+	width: 22px;    
+    background-position: -5px -539px;
+}
+
+footer .soc-btn-fb {
+	width: 13px;
+    background-position: -5px -473px;
+}
+
+footer .soc-btn-g {
+	width: 13px;
+    background-position: -5px -506px;
+}
+
+footer .copyright {
+	float: right;
+}
+
+footer .copyright p {
+	color: #353434;
+	line-height: 24px;
+	padding: 0;
+	margin: 0;
+	float: right;
+}
