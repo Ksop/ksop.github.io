@@ -679,6 +679,7 @@ h2 {
 .banner__video-wrapper {
   width: 100%;
   height: 100%;
+  display: none;
 }
 
 .banner__video-wrapper:after {
@@ -708,7 +709,7 @@ h2 {
   background-size: cover;
   height: 100vh;
   width: 100%;
-  display: none;
+  display: block;
 }
 
 @media screen and (max-device-width: 800px) {
