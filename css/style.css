@@ -708,11 +708,6 @@ p {
   }
 }
 @media (min-width: 1030px) {
-  .container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .intro {
     font-size: 30px;
   }
@@ -742,9 +737,23 @@ p {
     transition: width 500ms ease-in-out, left 300ms ease-in-out;
   }
 }
+@media (min-width: 1220px) {
+  .container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media (max-width: 599px) {
   .page-header__logo {
     margin-bottom: 10px;
+  }
+  .intro__scroll-down {
+    bottom: .5em;
+  }
+  .intro__scroll-down svg {
+    width: 30px;
+    height: 30px;
   }
 }
 @media (max-width: 400px) {
