@@ -1,243 +1,490 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <title>Kitep.kg | Платформа по обмену/продаже книг</title>
+  <title>Kitep.kg | Сайт для обмена и купли-продажи книг</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,700|PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400,600,700|PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-  <header class="page-header">
+  <div class="page-header-wrapper">
 
     <div class="container">
-
-      <div class="page-header__logo">
-        <a href="/" class="logo  logo--big">Kitep</a>
-      </div>
-      
-      <div class="page-header__links">
-        <a href="#" class="page-header__link">Войти</a><span>или</span><a href="#" class="page-header__link">Зарегистрироваться</a>
-      </div>
-      
-      <div class="page-header__search">
-        <form action="#" method="post" class="search">
-          <input type="search" name="search" placeholder="поиск..." class="search__field">
-          <input type="submit" name="submit" value="ic" class="search__submit">
-        </form>
-      </div>
-      
-      <div class="page-header__nav">
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li><a href="#" class="main-nav__link  main-nav__link--padding  main-nav__link--active">Главная</a></li>
-            <li><a href="#" class="main-nav__link  main-nav__link--padding">О нас</a></li>
-            <li><a href="#" class="main-nav__link  main-nav__link--padding">Партнеры</a></li>
-            <li><a href="#" class="main-nav__link  main-nav__link--padding">Новости</a></li>
-            <li><a href="#" class="main-nav__link  main-nav__link--padding">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
-
+    
+      <header class="page-header">
+    
+        <div class="page-header__logo">
+          <a href="/" class="logo  logo--big">Kitep</a>
+        </div>
+        
+        <div class="page-header__links">
+          <a href="#" id="login" class="page-header__link">Вход</a><span>|</span><a href="#" class="page-header__link">Регистрация</a>
+        </div>
+        
+        <div class="page-header__search">
+          <form action="#" method="post" class="search">
+            <input type="search" name="search" placeholder="Поиск по автору или названию книги" class="search__field">
+            <input type="submit" name="submit" value="ic" class="search__submit">
+          </form>
+        </div>
+        
+        <div class="page-header__nav">
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li><a href="#" class="main-nav__link  main-nav__link--padding  main-nav__link--active">Главная</a></li>
+              <li><a href="#" class="main-nav__link  main-nav__link--padding">О нас</a></li>
+              <li><a href="#" class="main-nav__link  main-nav__link--padding">Партнеры</a></li>
+              <li><a href="#" class="main-nav__link  main-nav__link--padding">Новости</a></li>
+              <li><a href="#footer-contacts" class="main-nav__link  main-nav__link--padding">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+    
+      </header>
+    
     </div>
     <!-- /container -->
 
-  </header>
+  </div>
 
 
 
 
 
-  <main>
+  <div class="container">
 
-    <div class="slider">
-      <img src="img/slider-1-800x500.jpg" alt="">
-      <img src="img/slider-2-800x500.jpg" alt="">
-      <img src="img/slider-1-800x500.jpg" alt="">
-      <img src="img/slider-2-800x500.jpg" alt="">
-      <img src="img/slider-1-800x500.jpg" alt="">
-      <img src="img/slider-2-800x500.jpg" alt="">
-    </div>
+    <main class="main-content">
 
-
-
-    <div class="container">
-      
       <!--~~~~~     CATEGORIES     ~~~~~-->
-      <div class="categories">
-        <h2 class="categories__title">Категории</h2>
-      
-        <ul class="categories__list">
-          <li class="categories__item  categories__item--smallest"><a href="#">Художественная литература</a></li>
-          <li class="categories__item"><a href="#">Детская литература</a></li>
-          <li class="categories__item"><a href="#">Школьная литература</a></li>
-          <li class="categories__item  categories__item--smaller"><a href="#">Энциклопедии</a></li>
-          <li class="categories__item"><a href="#">Медицина</a></li>
-          <li class="categories__item"><a href="#">Психология</a></li>
-          <li class="categories__item"><a href="#">IT-литература</a></li>
-          <li class="categories__item"><a href="#">Юридическая литература</a></li>
-          <li class="categories__item"><a href="#">Бизнес и экономика</a></li>
-          <li class="categories__item"><a href="#">Книги на иностранных языках</a></li>
-          <li class="categories__item"><a href="#">Разное</a></li>
-        </ul>
-      
-        <div class="categories__more-btn">
-          <a href="#" class="btn">Все категории</a>
+      <div class="main-content__categories">
+
+        <div class="categories">
+          <h2 class="categories__title">Категории</h2>
+        
+          <ul class="categories__list">
+            <li class="categories__item  categories__item--smallest"><a href="#">Художественная литература</a></li>
+            <li class="categories__item"><a href="#">Детская литература</a></li>
+            <li class="categories__item"><a href="#">Школьная литература</a></li>
+            <li class="categories__item  categories__item--smaller"><a href="#">Энциклопедии</a></li>
+            <li class="categories__item"><a href="#">Медицина</a></li>
+            <li class="categories__item"><a href="#">Психология</a></li>
+            <li class="categories__item"><a href="#">IT-литература</a></li>
+            <li class="categories__item"><a href="#">Юридическая литература</a></li>
+            <li class="categories__item"><a href="#">Бизнес и экономика</a></li>
+            <li class="categories__item"><a href="#">Книги на иностранных языках</a></li>
+            <li class="categories__item"><a href="#">Разное</a></li>
+          </ul>
+        
+          <div class="categories__more-btn">
+            <a href="#" class="btn">Все категории</a>
+          </div>
         </div>
+
       </div>
       <!--~~~~~     / CATEGORIES     ~~~~~-->
-      
-      
-      <!--~~~~~     RECENT BOOKS     ~~~~~-->
-      <div class="recent-books">
-        <h2 class="recent-books__title">Последние добавленные</h2>
-      
-      
-        <ul class="books">
-          <li class="book">
-            <a href="#" class="book__link">
-              <div class="book__author">Роулинг Джоан</div>
-              <div class="book__img-wrap">
-                <img src="img/book-1.JPG" alt="Гарри Поттер" class="book__img">
-              </div>
-              <div class="book__title">Гарри Поттер и проклятое дитя.</div>
-              <div class="book__price">500с</div>
-            </a>
-          </li>
-      
-          <li class="book">
-            <a href="#" class="book__link">
-              <div class="book__author">Гоулман Дэниел</div>
-              <div class="book__img-wrap">
-                <img src="img/book-2.JPG" alt="Эмоциональный интеллект. Почему он может значить больше, чем IQ" class="book__img">
-              </div>
-              <div class="book__title">Эмоциональный интеллект. Почему он может значить больше, чем IQ</div>
-              <div class="book__price">Обмен</div>
-            </a>
-          </li>
-      
-          <li class="book">
-            <a href="#" class="book__link">
-              <div class="book__author">Яхина Гузель</div>
-              <div class="book__img-wrap">
-                <img src="img/book-3.JPG" alt="Зулейха открывает глаза" class="book__img">
-              </div>
-              <div class="book__title">Зулейха открывает глаза</div>
-              <div class="book__price">300с</div>
-            </a>
-          </li>
-      
-          <li class="book">
-            <a href="#" class="book__link">
-              <div class="book__author">Резерфорд Эдвард</div>
-              <div class="book__img-wrap">
-                <img src="img/book-4.JPG" alt="Гарри Поттер" class="book__img">
-              </div>
-              <div class="book__title">Сарум. Роман об Англии</div>
-              <div class="book__price">400с</div>
-            </a>
-          </li>
-      
-          <li class="book">
-            <a href="#" class="book__link">
-              <div class="book__author">Марин Кэрол</div>
-              <div class="book__img-wrap">
-                <img src="img/book-5.JPG" alt="Ни дня без кисти. Как рисовать часто и понемногу, сохранять свежий взгляд, не бояться экспериментов" class="book__img">
-              </div>
-              <div class="book__title">Ни дня без кисти. Как рисовать часто и понемногу, сохранять свежий взгляд, не бояться экспериментов</div>
-              <div class="book__price">500с</div>
-            </a>
-          </li>
-      
-          <li class="book">
-            <a href="#" class="book__link">
-              <div class="book__author">Спаркс Николас</div>
-              <div class="book__img-wrap">
-                <img src="img/book-6.JPG" alt="Гарри Поттер" class="book__img">
-              </div>
-              <div class="book__title">Взгляни на меня</div>
-              <div class="book__price">400с</div>
-            </a>
-          </li>
 
-          <li class="book">
-            <a href="#" class="book__link">
-              <div class="book__author">Роулинг Джоан</div>
-              <div class="book__img-wrap">
-                <img src="img/book-1.JPG" alt="Гарри Поттер" class="book__img">
-              </div>
-              <div class="book__title">Гарри Поттер и проклятое дитя.</div>
-              <div class="book__price">500с</div>
-            </a>
-          </li>
-      
-          <li class="book">
-            <a href="#" class="book__link">
-              <div class="book__author">Гоулман Дэниел</div>
-              <div class="book__img-wrap">
-                <img src="img/book-2.JPG" alt="Эмоциональный интеллект. Почему он может значить больше, чем IQ" class="book__img">
-              </div>
-              <div class="book__title">Эмоциональный интеллект. Почему он может значить больше, чем IQ</div>
-              <div class="book__price">Обмен</div>
-            </a>
-          </li>
-      
-          <li class="book">
-            <a href="#" class="book__link">
-              <div class="book__author">Яхина Гузель</div>
-              <div class="book__img-wrap">
-                <img src="img/book-3.JPG" alt="Зулейха открывает глаза" class="book__img">
-              </div>
-              <div class="book__title">Зулейха открывает глаза</div>
-              <div class="book__price">300с</div>
-            </a>
-          </li>
-      
-          <li class="book">
-            <a href="#" class="book__link">
-              <div class="book__author">Резерфорд Эдвард</div>
-              <div class="book__img-wrap">
-                <img src="img/book-4.JPG" alt="Гарри Поттер" class="book__img">
-              </div>
-              <div class="book__title">Сарум. Роман об Англии</div>
-              <div class="book__price">400с</div>
-            </a>
-          </li>
-      
-          <li class="book">
-            <a href="#" class="book__link">
-              <div class="book__author">Марин Кэрол</div>
-              <div class="book__img-wrap">
-                <img src="img/book-5.JPG" alt="Ни дня без кисти. Как рисовать часто и понемногу, сохранять свежий взгляд, не бояться экспериментов" class="book__img">
-              </div>
-              <div class="book__title">Ни дня без кисти. Как рисовать часто и понемногу, сохранять свежий взгляд, не бояться экспериментов</div>
-              <div class="book__price">500с</div>
-            </a>
-          </li>
-      
-          <li class="book">
-            <a href="#" class="book__link">
-              <div class="book__author">Спаркс Николас</div>
-              <div class="book__img-wrap">
-                <img src="img/book-6.JPG" alt="Гарри Поттер" class="book__img">
-              </div>
-              <div class="book__title">Взгляни на меня</div>
-              <div class="book__price">400с</div>
-            </a>
-          </li>
-        </ul>
+
+
+      <div class="main-content__slider">
+        <div class="slider">
+          <img src="img/slider-1-846x255.jpg" alt="">
+          <img src="img/slider-1-846x255.jpg" alt="">
+          <img src="img/slider-1-846x255.jpg" alt="">
+          <img src="img/slider-1-846x255.jpg" alt="">
+          <img src="img/slider-1-846x255.jpg" alt="">
+        </div>
+      </div>     
       
       
-        <a href="#" class="btn">Больше книг</a>
+      
+      <div class="main-content__books">
+      
+        <!--~~~~~     RECENT BOOKS     ~~~~~-->
+        <div class="recent-books">
+          <h2 class="recent-books__title">Последние добавленные</h2>
+        
+        
+          <ul class="books">
+            <!-- item -->
+            <li class="book">
+              <a href="#" class="book__link">
+
+                <div class="book__author">Дэн Браун</div>
+
+                <div class="book__img-wrap">
+                  <img src="img/book-angelsanddemons.jpg" 
+                       alt="Ангелы и демоны" 
+                       class="book__img"  
+                       width="100px" 
+                       height="155px">
+
+                  <div class="book__img-overlay">
+                    <span class="btn  book__btn">Открыть</span>
+                  </div>
+                </div>
+
+                <div class="book__title">Ангелы и демоны</div>
+
+                <div class="book__price">600с</div>
+
+              </a>
+            </li>
+            <!-- /item -->
+            
+            <!-- item -->
+            <li class="book">
+              <a href="#" class="book__link">
+
+                <div class="book__author">Роулинг Джоан</div>
+
+                <div class="book__img-wrap">
+                  <img src="img/book-harry-potter-1.jpg" 
+                       alt="Гарри Поттер и философский камень" 
+                       class="book__img"  
+                       width="100px" 
+                       height="155px">
+
+                  <div class="book__img-overlay">
+                    <span class="btn  book__btn">Открыть</span>
+                  </div>
+                </div>
+
+                <div class="book__title">Гарри Поттер и философский камень</div>
+
+                <div class="book__price">500с</div>
+
+              </a>
+            </li>
+            <!-- /item -->
+
+            <!-- item -->
+            <li class="book">
+              <a href="#" class="book__link">
+
+                <div class="book__author">Стивен Кинг</div>
+
+                <div class="book__img-wrap">
+                  <img src="img/book-kristine.jpg" 
+                       alt="Кристина" 
+                       class="book__img"  
+                       width="100px" 
+                       height="155px">
+
+                  <div class="book__img-overlay">
+                    <span class="btn  book__btn">Открыть</span>
+                  </div>
+                </div>
+
+                <div class="book__title">Кристина</div>
+
+                <div class="book__price">200с</div>
+
+              </a>
+            </li>
+            <!-- /item -->
+
+            <!-- item -->
+            <li class="book">
+              <a href="#" class="book__link">
+
+                <div class="book__author">Сидни Шелдон</div>
+
+                <div class="book__img-wrap">
+                  <img src="img/book-songsoftime.jpg" 
+                       alt="Песни времени" 
+                       class="book__img"  
+                       width="100px" 
+                       height="155px">
+
+                  <div class="book__img-overlay">
+                    <span class="btn  book__btn">Открыть</span>
+                  </div>
+                </div>
+
+                <div class="book__title">Песни времени</div>
+
+                <div class="book__price">350с</div>
+
+              </a>
+            </li>
+            <!-- /item -->
+
+            <!-- item -->
+            <li class="book">
+              <a href="#" class="book__link">
+
+                <div class="book__author">Роулинг Джоан</div>
+
+                <div class="book__img-wrap">
+                  <img src="img/book-1.JPG" 
+                       alt="Гарри Поттер" 
+                       class="book__img"  
+                       width="100px" 
+                       height="155px">
+
+                  <div class="book__img-overlay">
+                    <span class="btn  book__btn">Открыть</span>
+                  </div>
+                </div>
+
+                <div class="book__title">Гарри Поттер и проклятое дитя.</div>
+
+                <div class="book__price">500с</div>
+
+              </a>
+            </li>
+            <!-- /item -->
+
+            <!-- item -->
+            <li class="book">
+              <a href="#" class="book__link">
+
+                <div class="book__author">Гоулман Дэниел</div>
+
+                <div class="book__img-wrap">
+                  <img src="img/book-2.JPG" 
+                       alt="Эмоциональный интеллект. Почему он может значить больше, чем IQ" class="book__img"  
+                       width="100px" 
+                       height="155px">
+
+                  <div class="book__img-overlay">
+                    <span class="btn  book__btn">Открыть</span>
+                  </div>
+                </div>
+
+                <div class="book__title">Эмоциональный интеллект. Почему он может значить больше, чем IQ</div>
+
+                <div class="book__price">Обмен</div>
+
+              </a>
+            </li>
+            <!-- /item -->
+
+            <!-- item -->
+            <li class="book">
+              <a href="#" class="book__link">
+
+                <div class="book__author">Яхина Гузель</div>
+
+                <div class="book__img-wrap">
+                  <img src="img/book-3.JPG" 
+                       alt="Зулейха открывает глаза" 
+                       class="book__img"  
+                       width="100px" 
+                       height="155px">
+
+                  <div class="book__img-overlay">
+                    <span class="btn  book__btn">Открыть</span>
+                  </div>
+                </div>
+
+                <div class="book__title">Зулейха открывает глаза</div>
+
+                <div class="book__price">300с</div>
+
+              </a>
+            </li>
+            <!-- /item -->
+
+            <!-- item -->
+            <li class="book">
+              <a href="#" class="book__link">
+
+                <div class="book__author">Резерфорд Эдвард</div>
+
+                <div class="book__img-wrap">
+                  <img src="img/book-4.JPG" 
+                       alt="Гарри Поттер" 
+                       class="book__img"  
+                       width="100px" 
+                       height="155px">
+
+                  <div class="book__img-overlay">
+                    <span class="btn  book__btn">Открыть</span>
+                  </div>
+                </div>
+
+                <div class="book__title">Сарум. Роман об Англии</div>
+
+                <div class="book__price">400с</div>
+
+              </a>
+            </li>
+            <!-- /item -->
+
+            <!-- item -->    
+            <li class="book">
+              <a href="#" class="book__link">
+
+                <div class="book__author">Марин Кэрол</div>
+
+                <div class="book__img-wrap">
+                  <img src="img/book-5.JPG" 
+                       alt="Ни дня без кисти. Как рисовать часто и понемногу, сохранять свежий взгляд, не бояться экспериментов" 
+                       class="book__img"  
+                       width="100px" 
+                       height="155px">
+
+                  <div class="book__img-overlay">
+                    <span class="btn  book__btn">Открыть</span>
+                  </div>
+                </div>
+
+                <div class="book__title">Ни дня без кисти. Как рисовать часто и понемногу, сохранять свежий взгляд, не бояться экспериментов</div>
+
+                <div class="book__price">500с</div>
+
+              </a>
+            </li>
+            <!-- /item -->
+
+            <!-- item -->    
+            <li class="book">
+              <a href="#" class="book__link">
+
+                <div class="book__author">Спаркс Николас</div>
+
+                <div class="book__img-wrap">
+                  <img src="img/book-6.JPG" 
+                       alt="Гарри Поттер" 
+                       class="book__img"  
+                       width="100px" 
+                       height="155px">
+
+                  <div class="book__img-overlay">
+                    <span class="btn  book__btn">Открыть</span>
+                  </div>
+                </div>
+
+                <div class="book__title">Взгляни на меня</div>
+
+                <div class="book__price">400с</div>
+
+              </a>
+            </li>
+            <!-- /item -->
+
+            <!-- item -->    
+            <li class="book">
+              <a href="#" class="book__link">
+
+                <div class="book__author">Роулинг Джоан</div>
+
+                <div class="book__img-wrap">
+                  <img src="img/book-1.JPG" 
+                       alt="Гарри Поттер" 
+                       class="book__img"  
+                       width="100px" 
+                       height="155px">
+
+                  <div class="book__img-overlay">
+                    <span class="btn  book__btn">Открыть</span>
+                  </div>
+                </div>
+
+                <div class="book__title">Гарри Поттер и проклятое дитя.</div>
+
+                <div class="book__price">500с</div>
+
+              </a>
+            </li>
+            <!-- /item -->
+
+            <!-- item -->    
+            <li class="book">
+              <a href="#" class="book__link">
+
+                <div class="book__author">Гоулман Дэниел</div>
+
+                <div class="book__img-wrap">
+                  <img src="img/book-2.JPG" 
+                       alt="Эмоциональный интеллект. Почему он может значить больше, чем IQ" 
+                       class="book__img"  
+                       width="100px" 
+                       height="155px">
+
+                  <div class="book__img-overlay">
+                    <span class="btn  book__btn">Открыть</span>
+                  </div>
+                </div>
+
+                <div class="book__title">Эмоциональный интеллект. Почему он может значить больше, чем IQ</div>
+
+                <div class="book__price">Обмен</div>
+
+              </a>
+            </li>
+            <!-- /item -->
+
+            <!-- item -->    
+            <li class="book">
+              <a href="#" class="book__link">
+
+                <div class="book__author">Яхина Гузель</div>
+
+                <div class="book__img-wrap">
+                  <img src="img/book-3.JPG" 
+                       alt="Зулейха открывает глаза" 
+                       class="book__img"  
+                       width="100px" 
+                       height="155px">
+
+                  <div class="book__img-overlay">
+                    <span class="btn  book__btn">Открыть</span>
+                  </div>
+                </div>
+
+                <div class="book__title">Зулейха открывает глаза</div>
+
+                <div class="book__price">300с</div>
+
+              </a>
+            </li>
+            <!-- /item -->
+
+            <!-- item -->    
+            <li class="book">
+              <a href="#" class="book__link">
+
+                <div class="book__author">Резерфорд Эдвард</div>
+
+                <div class="book__img-wrap">
+                  <img src="img/book-4.JPG" 
+                       alt="Гарри Поттер" 
+                       class="book__img"  
+                       width="100px" 
+                       height="155px">
+
+                  <div class="book__img-overlay">
+                    <span class="btn  book__btn">Открыть</span>
+                  </div>
+                </div>
+
+                <div class="book__title">Сарум. Роман об Англии</div>
+
+                <div class="book__price">400с</div>
+
+              </a>
+            </li>
+            <!-- /item -->
+          </ul>
+        
+        
+          <div class="books__more-btn">
+            <a href="#" class="btn">Больше книг</a>
+          </div>
+        </div>
+        <!--~~~~~     / RECENT BOOKS     ~~~~~-->
+        
       </div>
-      <!--~~~~~     / RECENT BOOKS     ~~~~~-->
 
-    </div>
-    <!-- /container -->
+    </main>
 
-  </main>
+  </div>
+  <!-- /container -->
 
 
 
@@ -247,40 +494,29 @@
 
     <div class="container">
     
-      <footer class="page-footer">
-    
-        <div class="page-footer__nav">
+      <footer class="page-footer">        
+        
+        <div class="page-footer__left-col">
           <h2 class="page-footer__title">Kitep</h2>
           
-          <nav class="main-nav">
-            <ul class="main-nav__list  main-nav__list--column">
-              <li><a href="#" class="main-nav__link  main-nav__link--footer-link">Главная</a></li>
-              <li><a href="#" class="main-nav__link  main-nav__link--footer-link">О нас</a></li>
-              <li><a href="#" class="main-nav__link  main-nav__link--footer-link">Партнеры</a></li>
-              <li><a href="#" class="main-nav__link  main-nav__link--footer-link">Новости</a></li>
-            </ul>
-          </nav>
+          <p class="page-footer__copyright">
+            © Сайт для обмена и купли-продажи книг, 2017
+          </p>
+          
+          <div id="footer-contacts" class="page-footer__contacts">        
+            <p>email@email.com</p>
+            <a href="tel:+996123456789" class="page-footer__phone">0123 456 789</a>
+          </div>
         </div>
+
         
-        
-        <div class="page-footer__contacts">
-          <h2 class="page-footer__title">Контакты</h2>
-        
-          <a href="tel:+996123456789" class="page-footer__phone">0123 456 789</a>
-        
-          <p>email@email.com</p>
-        
-          <ul class="soc-btns">
+        <div class="page-footer__right-col">
+          <ul class="soc-btns  soc-btns--fl-right">
             <li class="soc-btns__item"><a href="#" class="soc-bnts__link">f</a></li>
             <li class="soc-btns__item"><a href="#" class="soc-bnts__link">vk</a></li>
             <li class="soc-btns__item"><a href="#" class="soc-bnts__link">inst</a></li>
           </ul>
-        </div>
-        
-        
-        <p class="page-footer__copyright">
-          © Сайт для обмена и купли-продажи книг, 2017
-        </p>
+        </div>       
     
       </footer>
       
@@ -292,12 +528,12 @@
   <div class="auth-form-wrapper">
     <a href="#" id="auth-form-close" class="auth-form-close"></a>
     <form action="/" class="auth-form">
-      <h3 class="auth-form__title">Authorization</h3>
-      <label for="userName">Your name:</label>
+      <h3 class="auth-form__title">Войти</h3>
+      <label for="userName">Введите логин:</label>
       <input id="userName" type="text" placeholder="John" required/>                    
-      <label for="email">Your email:</label>
-      <input id="email" type="email" placeholder="your-email@mail.com" required/>                    
-      <span class="btn  auth-form__submit">Send</span>
+      <label for="email">Введите пароль:</label>
+      <input id="password" type="password" required/>                    
+      <span class="btn  auth-form__submit">Войти</span>
     </form>
   </div>
 
