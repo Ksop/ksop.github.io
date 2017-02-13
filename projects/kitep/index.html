@@ -4,6 +4,7 @@
   <title>Kitep.kg | Сайт для обмена и купли-продажи книг</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400,600,700|PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -27,7 +28,7 @@
         <div class="page-header__search">
           <form action="#" method="post" class="search">
             <input type="search" name="search" placeholder="Поиск по автору или названию книги" class="search__field">
-            <input type="submit" name="submit" value="ic" class="search__submit">
+            <input type="submit" name="submit" value="" class="search__submit">
           </form>
         </div>
         
@@ -101,6 +102,25 @@
       
       
       <div class="main-content__books">
+
+        <!--~~~~~     FILTER     ~~~~~-->
+          <div class="filter">
+            <h2 class="filter__title">Фильтр:</h2>
+
+            <form class="filter__form">
+              <label class="filter__form-control">Обмен
+                <input type="checkbox" checked>
+                <div class="filter__control-indicator"></div>
+              </label>
+
+              <label class="filter__form-control">Продажа
+                <input type="checkbox" checked>
+                <div class="filter__control-indicator"></div>
+              </label>
+            </form>
+          </div>
+        <!--~~~~~     / FILTER     ~~~~~-->
+
       
         <!--~~~~~     RECENT BOOKS     ~~~~~-->
         <div class="recent-books">
@@ -497,24 +517,32 @@
       <footer class="page-footer">        
         
         <div class="page-footer__left-col">
-          <h2 class="page-footer__title">Kitep</h2>
+          <h2 class="page-footer__title  page-footer__title--letter-space">Kitep</h2>
           
           <p class="page-footer__copyright">
             © Сайт для обмена и купли-продажи книг, 2017
           </p>
           
           <div id="footer-contacts" class="page-footer__contacts">        
-            <p>email@email.com</p>
+            <p class="page-footer__email">email@email.com</p>
             <a href="tel:+996123456789" class="page-footer__phone">0123 456 789</a>
           </div>
         </div>
 
         
         <div class="page-footer__right-col">
+        <h2 class="page-footer__title  page-footer__title--align-right">Мы в соц сетях</h2>
+
           <ul class="soc-btns  soc-btns--fl-right">
-            <li class="soc-btns__item"><a href="#" class="soc-bnts__link">f</a></li>
-            <li class="soc-btns__item"><a href="#" class="soc-bnts__link">vk</a></li>
-            <li class="soc-btns__item"><a href="#" class="soc-bnts__link">inst</a></li>
+            <li class="soc-btns__item">
+              <a href="#" class="soc-btns__link  soc-btns__link--fb">Facebook</a>
+            </li>
+            <li class="soc-btns__item">
+              <a href="#" class="soc-btns__link  soc-btns__link--vk">Вконтакте</a>
+            </li>
+            <li class="soc-btns__item">
+              <a href="#" class="soc-btns__link  soc-btns__link--inst">Instagramm</a>
+            </li>
           </ul>
         </div>       
     
