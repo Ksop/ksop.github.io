@@ -64,57 +64,57 @@
   </svg>
 
   <!--~~~~~     PAGE HEADER     ~~~~~-->
-  <div class="page-header-wrapper">
+    <div class="page-header-wrapper">
 
-    <div class="container">
-    
-      <header class="page-header">
-    
-        <div class="page-header__logo">
-          <a href="index.html" class="logo  logo--big">Kitep</a>
-        </div>
-        
-        <div class="page-header__user-block">
-          <div class="user-block">
-            <a href="#" class="user-block__link  js-show-auth" data-form="login">Вход</a>
-            <span>|</span>
-            <a href="#" class="user-block__link  js-show-auth" data-form="register">Регистрация</a>
+      <div class="container">
+      
+        <header class="page-header">
+      
+          <div class="page-header__logo">
+            <a href="index.html" class="logo  logo--big">Kitep</a>
           </div>
+          
+          <div class="page-header__user-block">
+            <div class="user-block">
+              <a href="#" class="user-block__link  js-show-auth" data-form="login">Вход</a>
+              <span>|</span>
+              <a href="#" class="user-block__link  js-show-auth" data-form="register">Регистрация</a>
+            </div>
 
-          <div class="user-block">
-            <a href="profile.html" class="user-block__link">Username</a>
-            <span>|</span>
-            <a href="add-form.html" class="user-block__link">Добавить книгу</a>
+            <div class="user-block">
+              <a href="profile.html" class="user-block__link">Username</a>
+              <span>|</span>
+              <a href="add-form.html" class="user-block__link">Добавить книгу</a>
+            </div>
           </div>
-        </div>
-        
-        <div class="page-header__search">
-          <form action="#" method="post" class="search">
-            <input type="search" name="search" placeholder="Поиск по автору или названию книги" class="search__field">
-            <button type="submit" name="submit" class="search__submit">
-              <svg><use xlink:href="#icon-search"></use></svg>
-            </button>
-          </form>
-        </div>
-        
-        <div class="page-header__nav">
-          <nav class="main-nav">
-            <ul class="main-nav__list">
-              <li><a href="index.html" class="main-nav__link  main-nav__link--padding">Главная</a></li>
-              <li><a href="about.html" class="main-nav__link  main-nav__link--padding">О нас</a></li>
-              <li><a href="partners.html" class="main-nav__link  main-nav__link--padding">Партнеры</a></li>
-              <li><a href="news.html" class="main-nav__link  main-nav__link--padding">Новости</a></li>
-              <li><a href="#footer-contacts" class="main-nav__link  main-nav__link--padding">Контакты</a></li>
-            </ul>
-          </nav>
-        </div>
-    
-      </header>
-    
+          
+          <div class="page-header__search">
+            <form action="#" method="post" class="search">
+              <input type="search" name="search" placeholder="Поиск по автору или названию книги" class="search__field">
+              <button type="submit" name="submit" class="search__submit">
+                <svg><use xlink:href="#icon-search"></use></svg>
+              </button>
+            </form>
+          </div>
+          
+          <div class="page-header__nav">
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li><a href="index.html" class="main-nav__link  main-nav__link--padding">Главная</a></li>
+                <li><a href="about.html" class="main-nav__link  main-nav__link--padding">О нас</a></li>
+                <li><a href="partners.html" class="main-nav__link  main-nav__link--padding">Партнеры</a></li>
+                <li><a href="news.html" class="main-nav__link  main-nav__link--padding">Новости</a></li>
+                <li><a href="#footer-contacts" class="main-nav__link  main-nav__link--padding">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+      
+        </header>
+      
+      </div>
+      <!-- /container -->
+
     </div>
-    <!-- /container -->
-
-  </div>
   <!--~~~~~     / PAGE HEADER     ~~~~~-->
 
 
@@ -140,60 +140,197 @@
         </div>
 
       </div>
-      <!--~~~~~     / CATEGORIES     ~~~~~-->      
-
+      <!--~~~~~     / CATEGORIES     ~~~~~-->
+  
 
       
       <main class="page-content__main">
 
-        <!--~~~~~     BREADCRUMBS     ~~~~~-->
-        <ul class="breadcrumbs">
+        <h1>Добавление книги</h1>
+      
+        <!--~~~~~     ADD FORM     ~~~~~-->
+        <section class="add-form">
 
-          <li class="breadcrumbs__item">
-            <a href="index.html" class="breadcrumbs__link">Главная</a>
-          </li>
+          <h2>Заполните форму</h2>
 
-          <li class="breadcrumbs__item">
-            <a href="news.html" class="breadcrumbs__link">Новости</a>
-          </li>
+          <form class="form" method="post" action="/">
 
-        </ul>
-        <!--~~~~~     / BREADCRUMBS     ~~~~~-->
+            <div class="form__group">
+              <label class="form__label" for="bookname">Название книги:</label>
+
+              <div class="form__group-field">
+                <input id="bookname" class="field" type="text" name="name">
+              </div>
+            </div>
 
 
-        <article class="one-news">
+            <div class="form__group">
+              <label class="form__label" for="author">Автор:</label>
 
-          <h1 class="one-news__title">
-            Впервые на русском языке издана новая книга Стивена Кинга, покорившая весь мир
-          </h1>
+              <div class="form__group-field">
+                <input id="author" class="field" type="text" name="author">
+              </div>
+            </div>
 
-          <div class="one-news__date">
-            <div class="date">10:53, 04 февраля 2017</div>
-          </div>
 
-          <div class="one-news__img">
-            <img src="img/news-man.jpg" alt="Happy man">
-          </div>
+            <div class="form__group">
+              <label class="form__label" for="publisher">Издательство:</label>
 
-          <div class="one-news__text">
-            <p>Титул «Короля ужасов» уже давно не охватывает всей многогранности творческой палитры Стивена Кинга. Писатель берется за самые разные литературные жанры и создает в них новые, яркие произведения. «Парень из Колорадо» - мистический роман с элементами классического детектива, в котором талант Стивена Кинга проявляется в полной мере. Российские поклонники творчества писателя ждали эту книгу 10 лет – и вот, роман в филигранном переводе Виктора Вебера, наконец, издан и на русском языке.</p> 
+              <div class="form__group-field">
+                <input id="publisher" class="field" type="text" name="publisher">
+              </div>
+            </div>
 
-            <p>Тайна, окутывающая смерть обнаруженного на пустынном побережье никому неизвестного мужчины, становится объектом расследования двух журналистов. Постепенно, шаг за шагом, репортеры находят все новые детали и все глубже погружаются в чужие секреты… Стивен Кинг мастерски держит в напряжении читателя до самой кульминации истории, и постепенно погружает его в атмосферу загадки и азарта детективов-любителей.</p>
 
-            <p>Тайна, окутывающая смерть обнаруженного на пустынном побережье никому неизвестного мужчины, становится объектом расследования двух журналистов. Постепенно, шаг за шагом, репортеры находят все новые детали и все глубже погружаются в чужие секреты… Стивен Кинг мастерски держит в напряжении читателя до самой кульминации истории, и постепенно погружает его в атмосферу загадки и азарта детективов-любителей. Сюжет романа стал основой популярного мистического сериала «Хейвен», который выходит на телеканале SyFy c 2010 года и пользуется большой популярностью у зрителей во всем мире.</p>
-          </div>
+            <div class="form__group">
+              <label class="form__label" for="genre">Жанр:</label>
 
-        </article>
+              <div class="form__group-field">
+                <select id="genre" class="field" name="genre">
+                  <option value="">Художественная литература</option>
+                  <option value="">Детская литература</option>
+                  <option value="">Школьная литература</option>
+                  <option value="">Медицина</option>
+                  <option value="">Психология</option>
+                  <option value="">IT-литература</option>
+                  <option value="">Бизнес и экономика</option>
+                  <option value="">Книги на иностранных языках</option>
+                  <option value="" selected>Разное</option>
+                </select>
+              </div>
+            </div>
+            <!-- /form group -->
+
+
+            <div class="form__group">
+              <label class="form__label" for="year">Год издания:</label>
+
+              <div class="form__group-field">
+                <select id="year" class="field" name="year">
+                  <option value="" selected>2017</option>
+                  <option value="">2016</option>
+                  <option value="">2015</option>
+                  <option value="">2014</option>
+                  <option value="">2013</option>
+                  <option value="">2012</option>
+                  <option value="">2011</option>
+                  <option value="">2010</option>
+                </select>
+              </div>
+            </div>
+            <!-- /form group -->
+
+
+            <div class="form__group">
+              <label class="form__label" for="condition">Состояние книги:</label>
+
+              <div class="form__group-field">
+                <select id="condition" class="field" name="condition">
+                  <option value="">Новая</option>
+                  <option value="" selected>Хорошее</option>
+                  <option value="">Среднее</option>
+                  <option value="">Плохое</option>
+                </select>
+              </div>
+            </div>
+
+
+            <div class="form__group">
+
+              <label class="form__label">Обложка книги:</label>
+
+              <div class="form__group-field">
+
+                <div class="radio-btn-group">
+
+                  <label class="radio-btn">
+                    <input class="radio-btn__input" type="radio" name="cover" value="hard" checked>
+                    <span class="radio-btn__text">Твердая:</span>
+                  </label>
+
+                  <label class="radio-btn">
+                    <input class="radio-btn__input" type="radio" name="cover" value="soft">
+                    <span class="radio-btn__text">Мягкая:</span>
+                  </label>
+
+                </div>
+                <!-- /radio btn group -->
+
+              </div>
+              <!-- /form group field -->
+
+            </div>
+            <!-- /form group -->
+
+
+            <div class="form__group">
+              <label class="form__label" for="contacts">Контакты:</label>
+
+              <div class="form__group-field">
+                <input id="contacts" class="field" type="text" name="contacts">
+              </div>
+            </div>
+
+
+            <div class="form__group">
+
+              <div class="form__group-field">
+
+                <div class="checkbox-group">
+
+                  <label class="checkbox">
+                    <span class="checkbox__text  form__label">Обмен</span>
+                    <input class="checkbox__input" type="checkbox" name="exchange" value="exchange" checked>
+                    <div class="checkbox__indicator  checkbox__indicator--wide"></div>
+                  </label>
+
+                  <label class="checkbox">
+                    <span class="checkbox__text  form__label">Продажа</span>
+                    <input class="checkbox__input" type="checkbox" name="selling" value="selling" checked>
+                    <div class="checkbox__indicator  checkbox__indicator--wide"></div>
+                  </label>
+
+                  <div class="form__group-field">
+                    <label class="form__label  form__label--block" for="price">Цена:</label>
+                    <input id="price" class="field  field--small" type="text" name="price">
+                  </div>
+
+                </div>
+                <!-- /checkbox group -->
+
+              </div>
+              <!-- /form group field -->
+
+
+
+            </div>
+            <!-- /form group -->
+
+            <div class="form__group">
+              <label class="form__label" for="description">Дополнительная информация:</label>
+
+              <div class="form__group-field">
+                <textarea id="description" class="field  field--area" rows="4" cols="40" name="description"></textarea>
+              </div>
+            </div>
+
+            <div class="form__group  form__group--action">
+              <button class="btn  btn--wide" type="submit">Создать</button>
+            </div>
+
+          </form>
+
+        </section>
+        <!--~~~~~     / ADD FORM     ~~~~~-->
         
       </main>
+      <!-- /page-content__books -->
 
     </div>
     <!-- /page-content -->
 
   </div>
   <!-- /container -->
-
-
 
 
   <!--~~~~~     PAGE FOOTER     ~~~~~-->  

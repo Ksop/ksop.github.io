@@ -8,10 +8,60 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400,600,700|PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js""><\/script>')
+  </script>
 
 </head>
 
 <body>
+  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+    <symbol viewBox="0 0 451.846 451.847" id="icon-arrow">
+      <title>icon-arrow</title>
+      <path d="M345.441 248.292L151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z"/>
+    </symbol>
+    <symbol viewBox="0 0 342 258" id="icon-book-add">
+      <title>icon-book-add</title>
+      <path d="M316.8 21c-83.5-43.1-141.5-6.2-145.6-3.5-4.1-2.7-62-39.6-145.6 3.5L0 235l23-3.3s8.7-1.7 21.3-7.3c12.6-5.6 83.1-34.8 126.7 10.2v.5l.2-.2.2.2v-.5c8.5-8.8 18.1-14.7 28-18.6-.1-1.6-.2-3.2-.2-4.9 0-7.2 1.4-14 4-20.3-19.5 5-30.3 13.2-32 14.6-3.8-3-54.4-41.1-144.7 1.7L47 36s74-34.3 124 10.1v.4c.1-.1.2-.1.2-.2.1.1.2.1.2.2v-.4c50-44.4 124-10.1 124-10.1L316 207c-3.7-1.8-7.4-3.4-11-4.9.5 2.9.8 5.9.8 8.9 0 5.4-.8 10.6-2.3 15.6 9.7 3.9 16 5.1 16 5.1l23 3.3-25.7-214z"/>
+      <path d="M239.3 160l-7.8-131c-45 2-60 28-60 28C126 6 52.3 40.3 52.3 40.3L34.5 198c79.5-39 137 0 137 0 10.7-7.5 24-11.8 36-14.4 7-11.5 18.4-20.1 31.8-23.6z"/>
+      <path d="M252.5 164.1c-25.9 0-46.9 21-46.9 46.9s21 46.9 46.9 46.9 46.9-21 46.9-46.9-21-46.9-46.9-46.9zm12.5 48.6h-9.7v9.6h-3.4v-9.6h-9.5v-3.4h9.5v-9.6h3.4v9.6h9.7v3.4z"/>
+    </symbol>
+    <symbol viewBox="0 0 342 235" id="icon-book">
+      <title>icon-book</title>
+      <path d="M316.8 21c-83.5-43.1-141.5-6.2-145.6-3.5-4.1-2.7-62-39.6-145.6 3.5L0 235l23-3.3s8.7-1.7 21.3-7.3c12.6-5.6 83.1-34.8 126.7 10.2v.5l.2-.2.2.2v-.5c43.6-45 114-15.8 126.7-10.2 12.7 5.7 21.3 7.3 21.3 7.3l23 3.3-25.6-214zM171.2 205.3c-3.8-3-54.4-41.1-144.7 1.7L47 36s74-34.3 124 10.1v.4c.1-.1.2-.1.2-.2.1.1.2.1.2.2v-.4c50-44.4 124-10.1 124-10.1L316 207c-90.4-42.8-141-4.7-144.8-1.7z"/>
+      <path d="M171.5 57C126 6 52.3 40.3 52.3 40.3L34.5 198c79.5-39 137 0 137 0 26.5-18.5 69-18 69-18l-9-151c-45 2.1-60 28-60 28z"/>
+    </symbol>
+    <symbol viewBox="0 0 31.012 31.012" id="icon-mail">
+      <title>icon-mail</title>
+      <path d="M28.512 26.529H2.5a2.503 2.503 0 0 1-2.5-2.5V6.982c0-1.379 1.122-2.5 2.5-2.5h26.012c1.378 0 2.5 1.121 2.5 2.5v17.047c0 1.379-1.122 2.5-2.5 2.5zM2.5 5.482c-.827 0-1.5.673-1.5 1.5v17.047c0 .827.673 1.5 1.5 1.5h26.012c.827 0 1.5-.673 1.5-1.5V6.982c0-.827-.673-1.5-1.5-1.5H2.5z"/>
+      <path d="M15.506 18.018c-.665 0-1.33-.221-1.836-.662L.891 6.219a.5.5 0 1 1 .658-.754l12.778 11.137c.64.557 1.72.556 2.358 0L29.46 5.466a.497.497 0 0 1 .706.049.5.5 0 0 1-.048.705L17.342 17.355c-.506.442-1.171.663-1.836.663z"/>
+    </symbol>
+    <symbol viewBox="0 0 438.536 438.536" id="icon-phone">
+      <title>icon-phone</title>
+      <path d="M414.41 24.123C398.333 8.042 378.963 0 356.315 0H82.228C59.58 0 40.21 8.042 24.126 24.123 8.045 40.207.003 59.576.003 82.225v274.084c0 22.647 8.042 42.018 24.123 58.102 16.084 16.084 35.454 24.126 58.102 24.126h274.084c22.648 0 42.018-8.042 58.095-24.126 16.084-16.084 24.126-35.454 24.126-58.102V82.225c-.001-22.649-8.043-42.021-24.123-58.102zm-55.251 308.751c-3.997 8.754-12.99 16.371-26.977 22.846-13.99 6.475-26.413 9.712-37.265 9.712-3.046 0-6.283-.235-9.708-.711-3.426-.479-6.324-.952-8.703-1.428-2.378-.476-5.523-1.331-9.421-2.57-3.905-1.234-6.715-2.189-8.422-2.854-1.718-.664-4.856-1.854-9.421-3.566-4.569-1.718-7.427-2.765-8.562-3.138-31.215-11.427-61.721-32.028-91.507-61.814-29.786-29.793-50.391-60.292-61.812-91.502-.378-1.143-1.425-3.999-3.14-8.565a952.564 952.564 0 0 0-3.571-9.419c-.662-1.713-1.615-4.521-2.853-8.42-1.237-3.903-2.091-7.041-2.568-9.423-.478-2.376-.95-5.277-1.427-8.704-.476-3.427-.713-6.667-.713-9.71 0-10.85 3.237-23.269 9.71-37.259 6.472-13.988 14.084-22.981 22.841-26.979 10.088-4.189 19.7-6.283 28.837-6.283 2.091 0 3.616.192 4.565.572.953.385 2.524 2.094 4.714 5.14 2.19 3.046 4.568 6.899 7.137 11.563 2.57 4.665 5.092 9.186 7.566 13.562a601.267 601.267 0 0 1 7.139 12.991c2.284 4.279 3.711 6.995 4.281 8.133.571.957 1.809 2.762 3.711 5.429 1.902 2.663 3.333 5.039 4.283 7.135.95 2.094 1.427 4.093 1.427 5.996 0 2.859-1.953 6.331-5.854 10.42-3.903 4.093-8.186 7.854-12.85 11.281s-8.945 7.092-12.847 10.994c-3.899 3.899-5.852 7.087-5.852 9.562 0 1.333.333 2.902 1 4.71.666 1.812 1.285 3.287 1.856 4.427.571 1.141 1.477 2.76 2.712 4.856 1.237 2.096 2.048 3.427 2.426 3.999 10.467 18.843 22.508 35.07 36.114 48.681 13.612 13.613 29.836 25.648 48.682 36.117.567.384 1.902 1.191 4.004 2.43 2.091 1.232 3.713 2.136 4.853 2.707 1.143.571 2.614 1.191 4.425 1.852 1.811.664 3.381.999 4.719.999 3.036 0 7.225-3.138 12.56-9.418a976.681 976.681 0 0 1 16.276-18.705c5.516-6.181 9.985-9.274 13.418-9.274 1.902 0 3.897.473 5.999 1.424 2.095.951 4.469 2.382 7.132 4.284 2.669 1.91 4.476 3.142 5.428 3.721l15.125 8.271c10.089 5.332 18.511 10.041 25.27 14.134s10.424 6.899 10.996 8.419c.379.951.564 2.478.564 4.572-.007 9.128-2.102 18.741-6.297 28.803z"/>
+    </symbol>
+    <symbol viewBox="0 0 250.313 250.313" id="icon-search">
+      <title>icon-search</title>
+      <path d="M244.186 214.604l-54.379-54.378c-.289-.289-.628-.491-.93-.76 10.7-16.231 16.945-35.66 16.945-56.554C205.822 46.075 159.747 0 102.911 0S0 46.075 0 102.911c0 56.835 46.074 102.911 102.91 102.911 20.895 0 40.323-6.245 56.554-16.945.269.301.47.64.759.929l54.38 54.38c8.169 8.168 21.413 8.168 29.583 0 8.168-8.169 8.168-21.413 0-29.582zm-141.275-44.458c-37.134 0-67.236-30.102-67.236-67.235 0-37.134 30.103-67.236 67.236-67.236 37.132 0 67.235 30.103 67.235 67.236s-30.103 67.235-67.235 67.235z" fill-rule="evenodd" clip-rule="evenodd"/>
+    </symbol>
+    <symbol viewBox="0 0 510 510" id="icon-soc-fb">
+      <title>icon-soc-fb</title>
+      <path d="M459 0H51C22.95 0 0 22.95 0 51v408c0 28.05 22.95 51 51 51h408c28.05 0 51-22.95 51-51V51c0-28.05-22.95-51-51-51zm-25.5 51v76.5h-51c-15.3 0-25.5 10.2-25.5 25.5v51h76.5v76.5H357V459h-76.5V280.5h-51V204h51v-63.75C280.5 91.8 321.3 51 369.75 51h63.75z"/>
+    </symbol>
+    <symbol viewBox="0 0 242 241" id="icon-soc-inst">
+      <title>icon-soc-inst</title>
+      <path d="M196-.7H63.7v59.3H55V-.7h-7.3v59.3h-9.3V0c-2.7.5-5.3 1.2-7.8 2.1v56.6H21V6.8C8.6 15 .3 29.1.3 45v33h78c11-10.7 26.1-17.3 42.7-17.3s31.7 6.6 42.7 17.3h78V45c0-25.1-20.6-45.7-45.7-45.7zm24 52.9c0 5-4.1 9.2-9.2 9.2h-23c-5 0-9.2-4.1-9.2-9.2v-23c0-5 4.1-9.2 9.2-9.2h23c5 0 9.2 4.1 9.2 9.2v23zM182.3 121c0 33.9-27.5 61.3-61.3 61.3S59.7 154.9 59.7 121c0-13.5 4.3-25.9 11.7-36H.4v110c0 25.1 20.6 45.7 45.7 45.7h150c25.1 0 45.7-20.6 45.7-45.7V85h-71c7.2 10.1 11.5 22.5 11.5 36z"/>
+      <path d="M121 168c26 0 47-21 47-47s-21-47-47-47-47 21-47 47 21 47 47 47zm1-79.7c18.1 0 32.7 14.7 32.7 32.7S140 153.7 122 153.7 89.3 139.1 89.3 121s14.6-32.7 32.7-32.7z"/>
+    </symbol>
+    <symbol viewBox="0 0 96 96" id="icon-soc-vk">
+      <title>icon-soc-vk</title>
+      <path d="M53.174 52.908c-1.539-.896-3.678-.896-5.416-.896h-5.707v11.76h5.238c1.939 0 4.412.139 6.084-1.035 1.535-1.033 2.404-3.061 2.404-4.992 0-1.794-1.068-3.94-2.603-4.837zm-2.153-10.043c1.27-.967 1.936-2.691 1.936-4.279 0-1.725-.801-3.381-2.27-4.277-1.537-.896-4.346-.689-6.15-.689h-2.486v10.35h3.289c1.871-.001 4.078.137 5.681-1.105zM79.125 0H16.873C7.555 0 0 7.555 0 16.875v62.25C0 88.443 7.555 96 16.873 96h62.252C88.443 96 96 88.443 96 79.125v-62.25C96 7.555 88.443 0 79.125 0zM50.604 72.535H30.992V25.201H52.42c6.207 0 11.934 3.951 11.934 10.92 0 5.381-3.004 9.066-6.836 10.211v.139c5.682 1.174 9.74 4.26 9.74 11.705 0 6.89-4.692 14.359-16.654 14.359z"/>
+    </symbol>
+  </svg>
 
   <!--~~~~~     PAGE HEADER     ~~~~~-->
     <div class="page-header-wrapper">
@@ -21,29 +71,37 @@
         <header class="page-header">
       
           <div class="page-header__logo">
-            <a href="/" class="logo  logo--big">Kitep</a>
+            <a href="index.html" class="logo  logo--big">Kitep</a>
           </div>
           
           <div class="page-header__user-block">
             <div class="user-block">
-              <a href="#" class="user-block__link" data-form="login">Вход</a>
+              <a href="#" class="user-block__link  js-show-auth" data-form="login">Вход</a>
               <span>|</span>
-              <a href="#" class="user-block__link" data-form="register">Регистрация</a>
+              <a href="#" class="user-block__link  js-show-auth" data-form="register">Регистрация</a>
+            </div>
+
+            <div class="user-block">
+              <a href="profile.html" class="user-block__link">Username</a>
+              <span>|</span>
+              <a href="add-form.html" class="user-block__link">Добавить книгу</a>
             </div>
           </div>
           
           <div class="page-header__search">
             <form action="#" method="post" class="search">
               <input type="search" name="search" placeholder="Поиск по автору или названию книги" class="search__field">
-              <input type="submit" name="submit" value="" class="search__submit">
+              <button type="submit" name="submit" class="search__submit">
+                <svg><use xlink:href="#icon-search"></use></svg>
+              </button>
             </form>
           </div>
           
           <div class="page-header__nav">
             <nav class="main-nav">
               <ul class="main-nav__list">
-                <li><a href="index.html" class="main-nav__link  main-nav__link--padding  main-nav__link--active">Главная</a></li>
-                <li><a href="#" class="main-nav__link  main-nav__link--padding">О нас</a></li>
+                <li><a href="index.html" class="main-nav__link  main-nav__link--padding">Главная</a></li>
+                <li><a href="about.html" class="main-nav__link  main-nav__link--padding">О нас</a></li>
                 <li><a href="partners.html" class="main-nav__link  main-nav__link--padding">Партнеры</a></li>
                 <li><a href="news.html" class="main-nav__link  main-nav__link--padding">Новости</a></li>
                 <li><a href="#footer-contacts" class="main-nav__link  main-nav__link--padding">Контакты</a></li>
@@ -70,24 +128,14 @@
       <div class="page-content__categories">
 
         <div class="categories">
-          <h2 class="categories__title">Категории</h2>
+          <h2 class="categories__title">Категории
+            <svg><use xlink:href="#icon-book"></use></svg>
+          </h2>
 
-          <ul class="categories__list">
-            <li class="categories__item  categories__item--smallest"><a href="#">Художественная литература</a></li>
-            <li class="categories__item"><a href="#">Детская литература</a></li>
-            <li class="categories__item"><a href="#">Школьная литература</a></li>
-            <li class="categories__item  categories__item--smaller"><a href="#">Энциклопедии</a></li>
-            <li class="categories__item"><a href="#">Медицина</a></li>
-            <li class="categories__item"><a href="#">Психология</a></li>
-            <li class="categories__item"><a href="#">IT-литература</a></li>
-            <li class="categories__item"><a href="#">Юридическая литература</a></li>
-            <li class="categories__item"><a href="#">Бизнес и экономика</a></li>
-            <li class="categories__item"><a href="#">Книги на иностранных языках</a></li>
-            <li class="categories__item"><a href="#">Разное</a></li>
-          </ul>
+          <ul id="categories" class="categories__list"></ul>
 
           <div class="categories__more-btn">
-            <a href="#" class="btn  btn--show-all">Все категории</a>
+            <a href="#" class="btn">Все категории</a>
           </div>
         </div>
 
@@ -97,9 +145,10 @@
       
       <main class="page-content__main">
 
+        <h1>Новости</h1>
+
         <section class="news">
 
-          <h2 class="news__page-title">Новости</h2>
 
 
           <ul class="news">
@@ -117,7 +166,7 @@
               </div>
 
               <div class="news__read-more">
-                <a href="one-news.html" class="btn  btn--read-more">Читать далее</a>
+                <a href="one-news.html" class="btn">Читать далее</a>
               </div>
 
             </li>
@@ -136,7 +185,7 @@
               </div>
 
               <div class="news__read-more">
-                <a href="one-news.html" class="btn  btn--read-more">Читать далее</a>
+                <a href="one-news.html" class="btn">Читать далее</a>
               </div>
 
             </li>
@@ -155,7 +204,7 @@
               </div>
 
               <div class="news__read-more">
-                <a href="one-news.html" class="btn  btn--read-more">Читать далее</a>
+                <a href="one-news.html" class="btn">Читать далее</a>
               </div>
 
             </li>
@@ -174,7 +223,7 @@
               </div>
 
               <div class="news__read-more">
-                <a href="one-news.html" class="btn  btn--read-more">Читать далее</a>
+                <a href="one-news.html" class="btn">Читать далее</a>
               </div>
 
             </li>
@@ -207,8 +256,15 @@
           </p>
           
           <div id="footer-contacts" class="page-footer__contacts">        
-            <p class="page-footer__email">email@email.com</p>
-            <a href="tel:+996123456789" class="page-footer__phone">0123 456 789</a>
+            <p class="page-footer__email">
+              <svg><use xlink:href="#icon-mail"></use></svg>
+              email@email.com
+            </p>
+            
+            <a href="tel:+996123456789" class="page-footer__phone">
+              <svg><use xlink:href="#icon-phone"></use></svg>
+              0123 456 789
+            </a>
           </div>
         </div>
 
@@ -218,13 +274,21 @@
 
           <ul class="soc-btns  soc-btns--fl-right">
             <li class="soc-btns__item">
-              <a href="#" class="soc-btns__link  soc-btns__link--fb">Facebook</a>
+              <a href="#" class="soc-btns__link  soc-btns__link--fb">Facebook
+                <svg><use xlink:href="#icon-soc-fb"></use></svg>
+              </a>
             </li>
+            
             <li class="soc-btns__item">
-              <a href="#" class="soc-btns__link  soc-btns__link--vk">Вконтакте</a>
+              <a href="#" class="soc-btns__link  soc-btns__link--vk">Вконтакте
+                <svg><use xlink:href="#icon-soc-vk"></use></svg>
+              </a>
             </li>
+
             <li class="soc-btns__item">
-              <a href="#" class="soc-btns__link  soc-btns__link--inst">Instagramm</a>
+              <a href="#" class="soc-btns__link  soc-btns__link--inst">Instagramm
+                <svg><use xlink:href="#icon-soc-inst"></use></svg>
+              </a>
             </li>
           </ul>
         </div>       
@@ -253,19 +317,23 @@
       
         <form action="/" class="modal-form">
       
-          <div class="modal-form__group">
-            <label for="login-email">Введите email:</label>
-            <input id="login-email" type="email" name="email" required />
+          <div class="form__group">
+            <label for="login-email" class="form__label">Введите email:</label>
+            <input id="login-email" class="field" type="email" name="email" required />
           </div>
       
-          <div class="modal-form__group  modal-form__group--fl-right">
-            <label for="login-password">Введите пароль:</label>
-            <input id="login-password" type="password" name="password" required />
+          <div class="form__group">
+            <label for="login-password" class="form__label">Введите пароль:</label>
+            <input id="login-password" class="field" type="password" name="password" required />
           </div>
       
-          <button type="submit" class="modal-form__submit">Войти</button>
+          <div class="form__group  form__group--action">
+            <button type="submit" class="btn">Войти</button>
+          </div>
       
-          <a href="#" class="modal-form__link" data-form="register">Еще не с нами? Зарегистрируйтесь :)</a>
+          <div class="form__group">
+            <a href="#" class="modal-form__link" data-form="register">Еще не с нами? Зарегистрируйтесь :)</a>
+          </div>
         </form>      
       
       </div>
@@ -280,27 +348,30 @@
       
         <form action="/" class="modal-form">
       
-          <div class="modal-form__group">
-            <label for="registration-email">Введите email:</label>
-            <input id="registration-email" type="email" name="email" required />
+          <div class="form__group">
+            <label for="registration-email" class="form__label">Введите email:</label>
+            <input id="registration-email" class="field" type="email" name="email" required />
           </div>
 
-          <div class="modal-form__group  modal-form__group--fl-right">
-            <label for="registration-login">Введите логин:</label>
-            <input id="registration-login" type="text" name="login" required />
+          <div class="form__group">
+            <label for="registration-login" class="form__label">Введите логин:</label>
+            <input id="registration-login" class="field" type="text" name="login" required />
           </div>
 
-          <div class="modal-form__group">
-            <label for="restration-password">Введите пароль:</label>
-            <input id="restration-password" type="password" name="password" required />
+          <div class="form__group">
+            <label for="restration-password" class="form__label">Введите пароль:</label>
+            <input id="restration-password" class="field" type="password" name="password" required />
           </div>
       
-          <div class="modal-form__group  modal-form__group--fl-right">
-            <label for="confirm-password">Подтвердите пароль:</label>
-            <input id="confirm-password" type="password" name="confirm-password" required />
+          <div class="form__group">
+            <label for="confirm-password" class="form__label">Подтвердите пароль:</label>
+            <input id="confirm-password" class="field" type="password" name="confirm-password" required />
           </div>
       
-          <button type="submit" class="modal-form__submit  modal-form__submit--lg">Зарегистрироваться</button>
+          <div class="form__group  form__group--action">
+            <button type="submit" class="btn">Зарегистрироваться</button>
+          </div>
+
         </form>      
       
       </div>

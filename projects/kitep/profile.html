@@ -64,57 +64,57 @@
   </svg>
 
   <!--~~~~~     PAGE HEADER     ~~~~~-->
-  <div class="page-header-wrapper">
+    <div class="page-header-wrapper">
 
-    <div class="container">
-    
-      <header class="page-header">
-    
-        <div class="page-header__logo">
-          <a href="index.html" class="logo  logo--big">Kitep</a>
-        </div>
-        
-        <div class="page-header__user-block">
-          <div class="user-block">
-            <a href="#" class="user-block__link  js-show-auth" data-form="login">Вход</a>
-            <span>|</span>
-            <a href="#" class="user-block__link  js-show-auth" data-form="register">Регистрация</a>
+      <div class="container">
+      
+        <header class="page-header">
+      
+          <div class="page-header__logo">
+            <a href="index.html" class="logo  logo--big">Kitep</a>
           </div>
+          
+          <div class="page-header__user-block">
+            <div class="user-block">
+              <a href="#" class="user-block__link  js-show-auth" data-form="login">Вход</a>
+              <span>|</span>
+              <a href="#" class="user-block__link  js-show-auth" data-form="register">Регистрация</a>
+            </div>
 
-          <div class="user-block">
-            <a href="profile.html" class="user-block__link">Username</a>
-            <span>|</span>
-            <a href="add-form.html" class="user-block__link">Добавить книгу</a>
+            <div class="user-block">
+              <a href="profile.html" class="user-block__link">Username</a>
+              <span>|</span>
+              <a href="add-form.html" class="user-block__link">Добавить книгу</a>
+            </div>
           </div>
-        </div>
-        
-        <div class="page-header__search">
-          <form action="#" method="post" class="search">
-            <input type="search" name="search" placeholder="Поиск по автору или названию книги" class="search__field">
-            <button type="submit" name="submit" class="search__submit">
-              <svg><use xlink:href="#icon-search"></use></svg>
-            </button>
-          </form>
-        </div>
-        
-        <div class="page-header__nav">
-          <nav class="main-nav">
-            <ul class="main-nav__list">
-              <li><a href="index.html" class="main-nav__link  main-nav__link--padding">Главная</a></li>
-              <li><a href="about.html" class="main-nav__link  main-nav__link--padding">О нас</a></li>
-              <li><a href="partners.html" class="main-nav__link  main-nav__link--padding">Партнеры</a></li>
-              <li><a href="news.html" class="main-nav__link  main-nav__link--padding">Новости</a></li>
-              <li><a href="#footer-contacts" class="main-nav__link  main-nav__link--padding">Контакты</a></li>
-            </ul>
-          </nav>
-        </div>
-    
-      </header>
-    
+          
+          <div class="page-header__search">
+            <form action="#" method="post" class="search">
+              <input type="search" name="search" placeholder="Поиск по автору или названию книги" class="search__field">
+              <button type="submit" name="submit" class="search__submit">
+                <svg><use xlink:href="#icon-search"></use></svg>
+              </button>
+            </form>
+          </div>
+          
+          <div class="page-header__nav">
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li><a href="index.html" class="main-nav__link  main-nav__link--padding">Главная</a></li>
+                <li><a href="about.html" class="main-nav__link  main-nav__link--padding">О нас</a></li>
+                <li><a href="partners.html" class="main-nav__link  main-nav__link--padding">Партнеры</a></li>
+                <li><a href="news.html" class="main-nav__link  main-nav__link--padding">Новости</a></li>
+                <li><a href="#footer-contacts" class="main-nav__link  main-nav__link--padding">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+      
+        </header>
+      
+      </div>
+      <!-- /container -->
+
     </div>
-    <!-- /container -->
-
-  </div>
   <!--~~~~~     / PAGE HEADER     ~~~~~-->
 
 
@@ -140,60 +140,208 @@
         </div>
 
       </div>
-      <!--~~~~~     / CATEGORIES     ~~~~~-->      
-
+      <!--~~~~~     / CATEGORIES     ~~~~~-->
+  
 
       
       <main class="page-content__main">
 
-        <!--~~~~~     BREADCRUMBS     ~~~~~-->
-        <ul class="breadcrumbs">
+        <h1>Настройки профиля</h1>
+      
+        <div class="profile">
 
-          <li class="breadcrumbs__item">
-            <a href="index.html" class="breadcrumbs__link">Главная</a>
-          </li>
+          <section class="profile__section">
+            <h2>Личные данные</h2>
 
-          <li class="breadcrumbs__item">
-            <a href="news.html" class="breadcrumbs__link">Новости</a>
-          </li>
+            <form class="form" method="post" action="/">
 
-        </ul>
-        <!--~~~~~     / BREADCRUMBS     ~~~~~-->
+              <div class="form__group">
+                <label class="form__label" for="username">Имя:</label>
+
+                <div class="form__group-field">
+                  <input id="username" class="field" type="text" name="name" value="Василий">
+                </div>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="email">Эл. почта:</label>
+
+                <div class="form__group-field">
+                  <input id="email" class="field" type="text" name="email" value="vasiliy@gmail.com">
+                </div>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="phone">Телефон:</label>
+
+                <div class="form__group-field">
+                  <input id="phone" class="field" type="text" name="phone" value="0772 123 456">
+                </div>
+              </div>
+
+              <div class="form__group  form__group--action">
+                <button class="btn  btn--wide" type="submit">Сохранить</button>
+              </div>
+
+            </form>
+
+          </section>
 
 
-        <article class="one-news">
+          <section class="profile__section">
 
-          <h1 class="one-news__title">
-            Впервые на русском языке издана новая книга Стивена Кинга, покорившая весь мир
-          </h1>
+            <h2>Добавленные книги</h2>
 
-          <div class="one-news__date">
-            <div class="date">10:53, 04 февраля 2017</div>
-          </div>
+            <ul class="products  products--flex-start">
+              <!-- item -->
+              <li class="products-item">
+                
+                <div class="products-item__author">Роулинг Джоан</div>
 
-          <div class="one-news__img">
-            <img src="img/news-man.jpg" alt="Happy man">
-          </div>
+                <a href="book.html" class="products-item__link">
+                  <div class="products-item__img-wrap">
+                    <img src="img/book-harry-potter-1.jpg" 
+                         alt="Гарри Поттер и философский камень" 
+                         class="products-item__img"  
+                         width="100px" 
+                         height="155px">
+                  
+                    <!-- 
+                    <div class="products-item__img-overlay">
+                      <a href="book.html" class="btn  products-item__btn">Открыть</a>
+                    </div> -->
+                  </div>
+                </a>
 
-          <div class="one-news__text">
-            <p>Титул «Короля ужасов» уже давно не охватывает всей многогранности творческой палитры Стивена Кинга. Писатель берется за самые разные литературные жанры и создает в них новые, яркие произведения. «Парень из Колорадо» - мистический роман с элементами классического детектива, в котором талант Стивена Кинга проявляется в полной мере. Российские поклонники творчества писателя ждали эту книгу 10 лет – и вот, роман в филигранном переводе Виктора Вебера, наконец, издан и на русском языке.</p> 
+                <div class="products-item__title">Гарри Поттер и философский камень</div>
 
-            <p>Тайна, окутывающая смерть обнаруженного на пустынном побережье никому неизвестного мужчины, становится объектом расследования двух журналистов. Постепенно, шаг за шагом, репортеры находят все новые детали и все глубже погружаются в чужие секреты… Стивен Кинг мастерски держит в напряжении читателя до самой кульминации истории, и постепенно погружает его в атмосферу загадки и азарта детективов-любителей.</p>
+                <div class="price-block">
+                  <div class="price  price--small">500с</div>
+                  <div class="price  price--small  price--exchange">Обмен</div>
+                </div>
+                
+              </li>
+              <!-- /item -->
+              <!-- item -->
+              <li class="products-item">
+                <div class="products-item__author">Дэн Браун</div>
 
-            <p>Тайна, окутывающая смерть обнаруженного на пустынном побережье никому неизвестного мужчины, становится объектом расследования двух журналистов. Постепенно, шаг за шагом, репортеры находят все новые детали и все глубже погружаются в чужие секреты… Стивен Кинг мастерски держит в напряжении читателя до самой кульминации истории, и постепенно погружает его в атмосферу загадки и азарта детективов-любителей. Сюжет романа стал основой популярного мистического сериала «Хейвен», который выходит на телеканале SyFy c 2010 года и пользуется большой популярностью у зрителей во всем мире.</p>
-          </div>
+                <a href="#" class="products-item__link">
+                  <div class="products-item__img-wrap">
+                    <img src="img/book-angelsanddemons.jpg" 
+                         alt="Ангелы и демоны" 
+                         class="products-item__img"  
+                         width="100px" 
+                         height="155px">
+                  </div>
+                </a>
 
-        </article>
+                <div class="products-item__title">Ангелы и демоны</div>
+
+                <div class="price">600с</div>
+              </li>
+              <!-- /item -->
+              <!-- item -->
+              <li class="products-item">
+                
+                <div class="products-item__author">Стивен Кинг</div>
+
+                <a href="#" class="products-item__link">
+                  <div class="products-item__img-wrap">
+                    <img src="img/book-kristine.jpg" 
+                         alt="Кристина" 
+                         class="products-item__img"  
+                         width="100px" 
+                         height="155px">
+                  </div>
+                </a>
+
+                <div class="products-item__title">Кристина</div>
+
+                <div class="price">200с</div>
+                
+              </li>
+              <!-- /item -->
+              <!-- item -->
+              <li class="products-item">
+                
+                <div class="products-item__author">Роулинг Джоан</div>
+
+                <a href="#" class="products-item__link">
+                  <div class="products-item__img-wrap">
+                    <img src="img/book-1.JPG" 
+                         alt="Гарри Поттер" 
+                         class="products-item__img"  
+                         width="100px" 
+                         height="155px">
+                  </div>
+                </a>
+
+                <div class="products-item__title">Гарри Поттер и проклятое дитя.</div>
+
+                <div class="price">500с</div>
+                
+              </li>
+              <!-- /item -->
+              <!-- item -->
+              <li class="products-item">
+                
+                <div class="products-item__author">Гоулман Дэниел</div>
+
+                <a href="#" class="products-item__link">
+                  <div class="products-item__img-wrap">
+                    <img src="img/book-2.JPG" 
+                         alt="Эмоциональный интеллект. Почему он может значить больше, чем IQ" class="products-item__img"  
+                         width="100px" 
+                         height="155px">
+                  </div>
+                </a>
+
+                <div class="products-item__title">Эмоциональный интеллект. Почему он может значить больше, чем IQ</div>
+
+                <div class="price-block">
+                  <div class="price  price--small">500с</div>
+                  <div class="price  price--small  price--exchange">Обмен</div>
+                </div>
+                
+              </li>
+              <!-- /item -->
+              <!-- item -->
+              <li class="products-item">
+                
+                <div class="products-item__author">Яхина Гузель</div>
+
+                <a href="#" class="products-item__link">
+                  <div class="products-item__img-wrap">
+                    <img src="img/book-3.JPG" 
+                         alt="Зулейха открывает глаза" 
+                         class="products-item__img"  
+                         width="100px" 
+                         height="155px">
+                  </div>
+                </a>
+
+                <div class="products-item__title">Зулейха открывает глаза</div>
+
+                <div class="price">300с</div>
+                
+              </li>
+              <!-- /item -->
+            </ul>
+
+          </section>
+
+        </div>
+        <!-- /profile -->
         
       </main>
+      <!-- /page-content__books -->
 
     </div>
     <!-- /page-content -->
 
   </div>
   <!-- /container -->
-
-
 
 
   <!--~~~~~     PAGE FOOTER     ~~~~~-->  
